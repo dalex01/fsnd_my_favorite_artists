@@ -49,28 +49,18 @@ main_page_head = '''
         }
     </style>
     <script type="text/javascript" charset="utf-8">
-        // Pause the video when the modal is closed
-        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
-            // Remove the src so the player itself gets removed, as this is the only
-            // reliable way to ensure the video stops playing in IE
-            $("#trailer-video-container").empty();
-        });
         // Start playing the video whenever the trailer modal is opened
-        $(document).on('click', '.movie-tile', function (event) {
-            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
-            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
-            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
-              'id': 'trailer-video',
-              'type': 'text-html',
-              'src': sourceUrl,
-              'frameborder': 0
-            }));
+        $(document).on('click', '.artist', function (event) {
+            $(".artist").each(function(){
+                $('.' + $(this).text().replace(/\s+/g, '')).hide();
+            });
+            $('.' + $(this).text().replace(/\s+/g, '')).show();
         });
-        // Animate in the movies when the page loads
-        $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
-            $(this).next("div").show("fast", showNext);
-          });
+        $(document).on('click', '.album-tile', function (event) {
+            $(".album-tile").each(function(){
+                $('.' + $(this).text().replace(/\s+/g, '')).hide();
+            });
+            $('.' + $(this).text().replace(/\s+/g, '')).show();
         });
     </script>
 </head>
@@ -111,7 +101,7 @@ main_page_content = '''
 
 # A single movie entry html template
 artist_tile_content = '''
-<div class="{artist_style}">
+<div>
     <h2 class="artist">{artist_title}</h2>
 </div>
 '''
@@ -123,21 +113,19 @@ def create_artists_tiles_content(artists):
 
         # Append the tile for the movie with its content filled in
         content += artist_tile_content.format(
-            artist_title = artist.name,
-            artist_style = artist.name
+            artist_title = artist.name
         )
     return content
 
 # A single movie entry html template
 album_tile_content = '''
-<div class="col-md-6 text-center album-tile {album_class}">
+<div class="col-md-6 text-center album-tile {album_class}" style="display:none">
     <img src="{poster_image_url}">
     <h3>{album_title}</h3>
 </div>
 '''
 
 def create_albums_tiles_content(artists):
-    #global main_page_style
     # The HTML content for this section of the page
     content = ''
     for artist in artists:
@@ -148,13 +136,11 @@ def create_albums_tiles_content(artists):
                 poster_image_url = album.cover,
                 album_class = artist.name.replace(" ", "")
             )
-            #main_page_style += '.' + artist.name.replace(" ", "") + '{ display: hide;}'
-    #main_page_style += '</style>'
     return content
 
 # A single movie entry html template
 song_tile_content = '''
-<div>
+<div class="{song_class}" style="display:none">
     <h4><a href="{song_url}">{song_title}</a></h4>
     <audio controls name="media">
         <source src="{song_preview}" type="audio/mpeg">
@@ -172,12 +158,12 @@ def create_songs_tiles_content(artists):
                 content += song_tile_content.format(
                     song_title = song.name,
                     song_preview = song.preview,
-                    song_url = song.url
+                    song_url = song.url,
+                    song_class = album.name.replace(" ", "")
                 )
     return content
 
 def open_artists_page(artists):
-    #global main_page_style
     # Create or overwrite the output file
     output_file = open('index.html', 'w')
 
@@ -186,9 +172,6 @@ def open_artists_page(artists):
         artists_list = create_artists_tiles_content(artists),
         albums_list = create_albums_tiles_content(artists),
         songs_list = create_songs_tiles_content(artists))
-
-    #rendered_head = main_page_head.format(
-    #    my_styles = main_page_style)
 
     # Output the file
     output_file.write(main_page_head + rendered_content)
