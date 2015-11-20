@@ -1,0 +1,3700 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Favorite Artists</title>
+    <!-- Bootstrap 3 -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        body {
+            padding-top: 80px;
+        }
+        h1 {
+            font-size: 30px!important;
+            margin-top: 0!important;
+        }
+        h2 {
+            font-size: 24px!important;
+        }
+        h3 {
+            font-size: 20px!important;
+        }
+        img {
+            width: 90%;
+        }
+        .artist:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+        .album-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
+        }
+        .album-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
+        }
+    </style>
+    <script type="text/javascript" charset="utf-8">
+        // Pause the video when the modal is closed
+        $(document).on('click', '.hanging-close, .modal-backdrop, .modal', function (event) {
+            // Remove the src so the player itself gets removed, as this is the only
+            // reliable way to ensure the video stops playing in IE
+            $("#trailer-video-container").empty();
+        });
+        // Start playing the video whenever the trailer modal is opened
+        $(document).on('click', '.movie-tile', function (event) {
+            var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
+            var sourceUrl = 'http://www.youtube.com/embed/' + trailerYouTubeId + '?autoplay=1&html5=1';
+            $("#trailer-video-container").empty().append($("<iframe></iframe>", {
+              'id': 'trailer-video',
+              'type': 'text-html',
+              'src': sourceUrl,
+              'frameborder': 0
+            }));
+        });
+        // Animate in the movies when the page loads
+        $(document).ready(function () {
+          $('.movie-tile').hide().first().show("fast", function showNext() {
+            $(this).next("div").show("fast", showNext);
+          });
+        });
+    </script>
+</head>
+
+  <body>
+    <!-- Main Page Content -->
+    <div class="container">
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#"><h1>My Favorite Artists</h1></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-2">
+        
+<div class="Sabaton">
+    <h2 class="artist">Sabaton</h2>
+</div>
+
+<div class="Hans Zimmer">
+    <h2 class="artist">Hans Zimmer</h2>
+</div>
+
+      </div>
+      <div class="col-md-6 container">
+        
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/eb1d3afed43d9e7f7060ca0d176eb36215a6555c">
+    <h3>Heroes (Deluxe Edition)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/3042b5ade0ceaf741efb12e1fb6526d05a08aee4">
+    <h3>Sabaton & Hammerfall: Metal Monsters</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/fa5d76b48052e0a61e9a4dded726810e52b68cbf">
+    <h3>Heroes</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/6219859d23c2e409452a5d50793f5082e675d87c">
+    <h3>Heroes (Bonus Version)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/4bbb7217625c238b67b2b8bbf47ab5513f610ce6">
+    <h3>Heroes (Track Commentary Version)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/96c06b3795f8d0049500de175b0a9a839ea22bde">
+    <h3>Heroes (Track By Track Commentary)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/9fb008233a88da3fd40bc2b9eeaa868838e9a38f">
+    <h3>War and Victory: The Best of Sabaton</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/4b738797dccaa03fc67e6f6bc2d09e40b104a446">
+    <h3>Carolus Rex (Bonus Version)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/627449c059931c016249ab427b4d59868c60fa03">
+    <h3>Carolus Rex</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile Sabaton">
+    <img src="https://i.scdn.co/image/1bce2b19e6cb877104d752d63bdd5241defcfc50">
+    <h3>Carolus Rex (Deluxe English & Swedish Version)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/32e4a20eea049673b34a8e5fa1773748c82a5b33">
+    <h3>The Little Prince (Original Motion Picture Soundtrack)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/f94e5475cedf84fc2e74622a56ab5fecf8fed32d">
+    <h3>Le Petit Prince (Bande originale du film)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/440d34b1d9558e2deecbc4af198957037e47324a">
+    <h3>Eric Whitacre Live at iTunes Festival 2014</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/0b9723566ee2a1eeb93a7175863efba713f56e0a">
+    <h3>Chappie (Original Motion Picture Soundtrack)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/ad5515d742f65d0c1754aabdf38d39c3648f639b">
+    <h3>Interstellar: Original Motion Picture Soundtrack</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/f531b92d5f17cd396a6fc67733030a3dffb87562">
+    <h3>Rush</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/cae339516b751a0f3ae512368cf83b0ce90dde86">
+    <h3>The Lone Ranger</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/42de2f7b23eb4cd093a27b7bcb042263fe7b8134">
+    <h3>Man Of Steel (Original Motion Picture Soundtrack)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/51434660e564a116a940d6412ea01d504782d1fd">
+    <h3>Man Of Steel: Original Motion Picture Soundtrack</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/43d68081e4209df8e1c562533951882d5e7b6b95">
+    <h3>Man of Steel: Original Motion Picture Soundtrack</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/859b7a1eda8b921c8d3087a301eae097c45ef8fd">
+    <h3>Man Of Steel: Original Motion Picture Soundtrack (Deluxe Edition)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/42de2f7b23eb4cd093a27b7bcb042263fe7b8134">
+    <h3>Man Of Steel</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/f62278d4b7f8eb3b91d952c0e9be567237256179">
+    <h3>The Bible OST</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/5bb07535f370692226cacd0e6f5dedbcdd39ebb0">
+    <h3>The Bible (Original Soundtrack)</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/9062d7e29adaa4f651150f652ff3580e8afb0ab7">
+    <h3>The Dark Knight Rises: Original Motion Picture Soundtrack</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/fe2fb71424316b097d5004a22323cad1d518e993">
+    <h3>The Dark Knight Rises</h3>
+</div>
+
+<div class="col-md-6 text-center album-tile HansZimmer">
+    <img src="https://i.scdn.co/image/7afa1a9a5e1da511ac743b8af865013ed857e82c">
+    <h3>Sherlock Holmes: A Game of Shadows</h3>
+</div>
+
+      </div>
+      <div class="col-md-4">
+        
+<div>
+    <h4><a href="https://open.spotify.com/track/7IEWEuiTwGjbMN1bRkX9LS">b'Night Witches'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5d55bcfdf5a476bd40f9aebcda9fbad5a5651559" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7dgDmYh4mND38AIwEUTOwo">b'No Bullets Fly'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/05e9fbdcfb3499f59a7805338fd08e18ae0a3417" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2dmcQEFZsOYolBxRqYSbAj">b'Smoking Snakes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0ed561a7ee2da663e46c5fb9e437ae68b820a0b0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3BivB2HqVkxHIhUUCPJf2h">b'Inmate 4859'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8797ceeebdc654f8ca9e9bc08bb435ee8779a7a0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5F7IyG6wjA91UOpBIpYm0J">b'To Hell and Back'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2d413a804ba95f104f31b44880bf696dae4fd57f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/21y2QRAdPInZKQX2dAR7Bc">b'The Ballad of Bull'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0867da419699343b4d12b89cc912bcf0f7ada7d9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5asQcymVjWuLuPFWtyCpht">b'Resist and Bite'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7a9cf6a2c4a217469db024242a8b41300c21e54a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5peRFP6wXxBXCEiuhuDM00">b'Soldier of 3 Armies'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2761f879add0466ef15103740c02850b826425b8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4Ssiq8164F0R0kEJcLYf69">b'Far from the Fame'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a79b987721e12049b5aa7e761a84eeb8604613cb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ZzlUDTgZXl0JDsjLaptKI">b'Hearts of Iron'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b11cba0d55a22ca0b55cdedb833f48e93fe2b66c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Kmc7ZQoNhr0bpFWX22N2v">b'Night Witches (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d07bd8fb71fd35a34b739c3c1cc43bd4c53e4f03" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5RUyKpEMJ2qx3sHxREZyHg">b'To Hell and Back (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/177ed0b9130ca80ab1f3b9f1f5b1f4e58df7a025" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6V7vAVzEhswABkwDPkggup">b'Smoking Snakes (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bf97acb756024b3304ce93c4021bc62dd55a5552" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6eS5yl9FROGxdEt6OfvKCH">b'Far from the Fame (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0f7f22f0c092b158777bcb1162183cfb08439ac7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4f2uN3Uhz4rJ0a1ysQc05K">b'Resist and Bite (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03eea6ca7e795f70481ff54bd6db872972a40606" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2qMIQ3qdRwPmBu3CHGS9Cr">b'Soldier of 3 Armies (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/10a2c84782a6163cd27be38c204d12f43aec5ca0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4rI7W5t0WoPeMKzhSPoV3D">b'Carolus Rex (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1b10b2ae6e52609f9ef65b4cc504fee7610b1ecb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ZJNaLn6osMUJ1AoxZxQ5r">b'Gott Mit Uns (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a57532a70a6273f4e0d457e49321fa7e71fc45aa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3i4xoqIZbboPL9WbVDGc4F">b'Karolinens B\xc3\xb6n (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d433d789a70381fb3e681392f300568c34fa31aa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2l0yLFQfc9WeEB5COKFRcH">b'1 6 4 8 (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1f3f4594f79dc36ec83846a7344d74b19d08fb25" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/43sYrgEcXOgZSRRuP7gFVY">b'En Livstid I Krig (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c697134b0a44e8820c1320daa42062a9c12fb107" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3SZIyyTKuONh5GffiBOG3z">b'Twilight of the Thunder God (Sabaton Cruise 2014 1st Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2e58eca118a2c64ef2efdacad7ec581990e95a79" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5Rt2sHkJ7eoNAvwsm8ore0">b'Ghost Division (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c281f3808b04e63e3edb40c88604c3262258381c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0a7uco8aSLnMS60aHnvJwB">b'40: 1 (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/73dea5b427cb1588c9d80d4aaf63ab51472d8635" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0mVnBCoLP8whcbhR8nKlwx">b'White Death (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1b6a8894e31fc3753f594541ffa64cedf625560a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/138HIy0kFqZ9xYpy1bhxCO">b'Attero Dominatus (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2753caa8c4959b39e8add36b38466578cd6f1cde" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/41rqRQ42JdJ0rB1iXz8SCc">b'7734 (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/714fe90f734f647c4be84e8afbd4096ca0703d6c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7muDcVb4vQa0TOgDGMfQav">b'The Price of a Mile (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/091a20a62f6c80efa660ab29ef15d1f9de28b308" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7rwsWzqiOTrxiYAXGPM27G">b'Talvisota (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0d1fe7eab14d8ccce5ccf361e28609e6c1327352" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1hANjSFJqzZ2djHAfbS4qj">b'Swedish Pagans (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/401c3cc63b22616a1bf6982b3e4c164c359e904e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3323D11rbNLOuu9rpPnPRB">b'The Art of War (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/eab6a3ebd16e6762de495c5a15bbc6ee4136f7c3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4pzOZxEjcft8WUmvl8mTWH">b'Primo Victoria (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5b10e0927ff763fc722a7615fd7c24212846115b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6iQgyfqSwb26DlR3falFr3">b'Metal Cr\xc3\xbce (Sabaton Cruise 2014 2nd Set)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16a20ebbcf0ced292fa0a2ecac8363ff489dd115" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6YwivRCPggaAWmogtcTu5a">b'To Hell and Back'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c3129e4506ac62a18f6edc4c2b30dea1dc870954" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0Qe9IzFLuBNv2it0hK3XJ6">b'Night Witches'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/53ce984ba73670c7b1218aa69af3359c4ea7c0f7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3uQpr9awqMIPsXKf6TNsPw">b'Ghost Division'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e1cea0660a3271a6535290713636555191e50540" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6WoV2GhYWJ2SXOHWkz0Sa9">b'Smoking Snakes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0cf9a459e2efa19320cdb083051d3dca75201bb8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1oNR2V5BUvm9S0Rg4DPD1X">b'Soldier of 3 Armies'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16f9c43ae781bb958dacd014355cdc6ee33a7334" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3B7GCUhGqtjmeHPOcwbizP">b'40: 1'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c974ea437418e0d1031fc089553f8b01d51f449d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Yw49jNQxGwjKvjC6jCQXe">b'A Lifetime of War (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6730fa65376b6e9b95e433d7b6baff134071e8e1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/26BkM4wFKtPdzozen1NKwH">b'Killing Ground (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/52569e310e0ef15854651a0a929eb05511d18e2c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2wEPNL1nqxpAr40shNE9yv">b'Winter Is Coming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f92046fa013c7837ff712ad92e2522c117380359" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4WprtUAAduuOl4pYYDCqRw">b'Origins'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0d9d31aa42af6e6d7dfc6f59adc225fe0d412884" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5HvjKmgOWR6gb9DMepZfZo">b'Breaking the Law'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/037a1566b390a705f31dcc65f5f4d9e50c6db786" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7IIrRdqmt7RqS192GxE7aE">b'The Fallen One'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/42c8da9cdb952caac52cd10ef1db30173113074a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0v392eNENDe7upK77Z9qqf">b'The Metal Age'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/187faa0b1183c9a4cfeddbb0f006deb0c5abc044" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6T4gVtAqVn85QZvW9xHoxx">b'Last Man Standing'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7e7b3145e2dc39b504a577b90ebbccfc7a224947" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5qVBCywJP5GRHIPAyOf9w6">b'(R) Evolution'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f9412694c4ce8ea364071a57799e97b6744ccb33" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/77qPZmeJsUMaoA5HX15LBJ">b'Bushido'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f12f74f90e56e9a33943ede3323c30ffe7471f73" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4GyoRIx9au0OSRrqbArkia">b'Night Witches'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/53ce984ba73670c7b1218aa69af3359c4ea7c0f7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6fGPI5szqUWv4iPfrpAwS6">b'No Bullets Fly'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4d04c2f5c9e97c89452a7ac9d4b6e4407ae401c9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2aFnJQduYU5DRuNurt9Ycp">b'Smoking Snakes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0cf9a459e2efa19320cdb083051d3dca75201bb8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5zBKxOKQ9kEJVZIBCQWR0L">b'Inmate 4859'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/30e8ea62b1d85919c93f6db7dbd697cf25db1fe1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/12dbm3GD7mGrySotwE6dm5">b'To Hell and Back'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d08b8eea690181a9f0352bc4d793b37daba8a14e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5PXoJQVNOGKSJQ2aU2QYGl">b'The Ballad of Bull'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0151d3751ae44790e469362547f260d201c37673" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0DhsBWaVj3Fk4gzUzngAmP">b'Resist and Bite'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7f3d03332ff956fbc14483661e647014223f7be7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6pvxQMKCQb8gv8R3yeqEQz">b'Soldier of 3 Armies'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16f9c43ae781bb958dacd014355cdc6ee33a7334" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0twOWiuuAQTdQEtTuErg7E">b'Far from the Fame'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/702b9319f900645ffb5a7deb512cfab89631b70a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3kRnYFhWbQgr0liHSSfM9G">b'Hearts of Iron'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d3dc856ae4f5ba2f328056ba50ed5bece8a421b2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/329eHrIjcLSrbkNH3cDiy7">b'7734'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9d4808036c1c574bb7cfae1cfaa85ad0d0d5a9e4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2xsPzpWRpk0qn9Gr17MdUg">b'Man of War'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fd961bc2b1e28bfac81a834d0bbe77c65ff40d09" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5jZicJn6EPgSpeOgKOkmLq">b'For Whom the Bell Tolls - Bonus Track'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/91f54ce1156ecef80e70d9a188afcc9a4af7381e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1u5l2ZhEZQiQFiRqcPeGKY">b'Night Witches'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/53ce984ba73670c7b1218aa69af3359c4ea7c0f7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0yf5Cc5ZcOjL2DzINZG70L">b'No Bullets Fly'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4d04c2f5c9e97c89452a7ac9d4b6e4407ae401c9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5GttmBsub6ZXdmw3m0sxVa">b'Smoking Snakes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0cf9a459e2efa19320cdb083051d3dca75201bb8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0RYNWSMwUY4lSVUJNTZIYB">b'Inmate 4859'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/30e8ea62b1d85919c93f6db7dbd697cf25db1fe1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5vOtKE2XA3HMx01QKg7Gfv">b'To Hell and Back'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c3129e4506ac62a18f6edc4c2b30dea1dc870954" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/719qZPzLdrkSFhdLcsMgrJ">b'The Ballad of Bull'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0151d3751ae44790e469362547f260d201c37673" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0PWktkH42j7VwVhRxT13rN">b'Resist and Bite'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7f3d03332ff956fbc14483661e647014223f7be7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5QMjfiYjrGbXMJm7tm3rQj">b'Soldier of 3 Armies'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16f9c43ae781bb958dacd014355cdc6ee33a7334" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6ZpRwT7Bt4zzo0Telh85Vw">b'Far from the Fame'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/702b9319f900645ffb5a7deb512cfab89631b70a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3zDgSVEZcxxs1IFndsHGim">b'Hearts of Iron'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d3dc856ae4f5ba2f328056ba50ed5bece8a421b2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/45wBNWI7yo4RoYqAfRJNrW">b'7734'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9d4808036c1c574bb7cfae1cfaa85ad0d0d5a9e4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1PFEky8bm438HfdYy7Gcj7">b'Man of War'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fd961bc2b1e28bfac81a834d0bbe77c65ff40d09" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2h2wnJvraiF0rz9gBVJA2l">b'For Whom the Bell Tolls (Metallica Cover) [Bonus Track]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/91f54ce1156ecef80e70d9a188afcc9a4af7381e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2y4cyTXydQQGxmBttw8wHv">b'Intro - Heroes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6b37ac9e0f568a89019f83394f2f16c55463315c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3LQz3NjImAA0wah8AfSyef">b'Night Witches - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/eb5716815ab8c2c9598245fd709cd7b1489464b0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4Ac2zx9a1D6fPiZUdfCsqv">b'No Bullets Fly - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6ec17e8dfafb2ff91c498e4d071b47df12752911" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0QBbPyuh0eBj0kjOi4t84r">b'Smoking Snakes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/da6c26009fec512f102245aa803b8cebac18a952" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4bsS7yc3Kfl3P83Y0pw4Qm">b'Inmate 4859 - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b07f89060fe13c1eb61ed96634323c801db364b3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6ipw5fkW5xODLdWOkrflD9">b'To Hell And Back - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f6488aa57924a77f08fef42edb24cd09578fd9ba" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0BcHdRPljVdnzTUGn9KEZS">b'The Ballad Of Bull - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4c6734aef2fa45cb75dae25d91db747b720717aa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1zOMo5eyN8UwsaZqYlNuJj">b'Resist And Bite - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f68c58bdc43212705db6f5f64bd140700ee36458" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5a07BJKK5B8RlSiHQEgs8K">b'Soldier Of 3 Armies - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/66f8795ff9cab9e0f4a428fe792a1a84a9597301" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0UihYpphzU8li0BFnPbd3N">b'Far From The Fame - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0d876a41059f7d83b5116b6a9cf557ab1082e47d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7AcA3dGsx0lO9pfrbDJ5SR">b'Hearts Of Iron - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5641d15fedb1a62c1ee7b64fb8406b8e4fec4c57" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0DewPUqtkuwomJHHYdgoaR">b'Outro - Heroes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/38e2ba1a2957169d01d102e6a1d1055cfa38e1be" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1XgILImErpMiejCx9Ggp4i">b'Intro - Heroes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d87b5e02147b897531acaff1724171cec4f1a34d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1z19wKGZPTnV7xG8iwi3tl">b'Night Witches - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/eb5716815ab8c2c9598245fd709cd7b1489464b0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6fumoO69T8MfLWyNGIZ7Pi">b'No Bullets Fly - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6ec17e8dfafb2ff91c498e4d071b47df12752911" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3ZicK36KFc6gDaFNdsiRCX">b'Smoking Snakes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/da6c26009fec512f102245aa803b8cebac18a952" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/34gvss3uBKNqKSrK75gAqy">b'Inmate 4859 - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b07f89060fe13c1eb61ed96634323c801db364b3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/35tw3tjnx6ZnGuWZm2qv3K">b'To Hell And Back - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/574ec474af22c94da7aaeb8c18d9bf175031c634" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/06FcB23uHTGWjpbpfqScAQ">b'The Ballad Of Bull - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4c6734aef2fa45cb75dae25d91db747b720717aa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2TBmq885oOF37tDQ7PD6um">b'Resist And Bite - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f68c58bdc43212705db6f5f64bd140700ee36458" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/49ETmygLrIS5pOv4QWe9Av">b'Soldier Of 3 Armies - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/66f8795ff9cab9e0f4a428fe792a1a84a9597301" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6r8BxLsaudIyuKERR6RmGJ">b'Far From The Fame - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0d876a41059f7d83b5116b6a9cf557ab1082e47d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/545Xhe7uB7bbtfhIHcbgDW">b'Hearts Of Iron - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8b8061e43a57ebd71781529d04956c940ace5444" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/749pFuO0BMJZpLMw9q6r31">b'Outro - Heroes - Track Commentary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ebf4227510a1d4d0af1bfc0fdb908bdc9f9d8c71" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/11CRFf2gz1z6uGG8jrnvle">b'Primo Victoria'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/47600d7406bfe1913495e47f6831558f114d5f69" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1gV2ygDilLBar9zNhxR5es">b'Ghost Division'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e1cea0660a3271a6535290713636555191e50540" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/04SG10c0a9s1VqduBWivPU">b'40: 1'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c974ea437418e0d1031fc089553f8b01d51f449d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/37nQZMiHMmoPY1OchA1MJo">b'The Price of a Mile'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6dc870cea8de922591935b4c51187c4a329c22bc" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2vUU1c5qFcPCmjc32Ujfok">b'Attero Dominatus'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6dc54c4ca0aa7858bf4b4b6175053930c8bd372e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0j2paUEeSc8KeNQeb6ys7g">b'Panzerkampf'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bec26119ff164ea48aee4bb5a62e8e8e5bb0165f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7EzjNrLJ1VnGi3EqDYZmwG">b'The Lion from the North (Live at Woodstock Festival)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f7d46722d321ff850d8793cd0b59cc8edc647501" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/56I0MV26dxBr0SGfxjgMBB">b'Swedish Pagans'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a3d483ff563efe73a1455bc74c049b03c185152d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4A0Cj7QYyFc0DKcCYBQCMN">b'Metal Machine'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e16bc8a7ce5864960ffa2efbd8893a7bed66d86e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1mA1HUeUrHbhsAeZgTjqwk">b'The Art of War'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3899ec4d8e18b488c228011a03d7711a2501ac14" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0Fuy0CjGK6o6P2nHeGitfP">b'Wolfpack'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/330a33ec539b5e524f55ebb98f84dd744fee1d1d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1RM9n3QRLhJc1ooxsgoyQE">b'Uprising (Live at the Sabaton Cruise)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fb89313768a4a28d2747f8aa7c8416c21b47f83e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2pzrOiHEaO7rqsu9RgUUDP">b'Into the Fire'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f714ca7bd2f95ff6750ce6552b5cbeb059d177af" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5bcStO0dJbsXsZiEo7wbfF">b'Panzer Battalion'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/67345d1e620b6cfe68dc4278e6fc6e3f558f1039" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5U9qOKBqTZacFMD5wuXhY6">b'Unbreakable'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/97fc376dab440c4171d5f2be054222c283d13cc4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7mNdah08QFivtujvTDL7Z7">b'Carolus Rex (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cea3d0bb29111b8b9bf2bd5dbd94d6355e789440" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0SECvxaHboYJIHIwo27AYc">b'Purple Heart'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/91acf38b6b4a4c162c63b88910d8814e5110b44c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6k3298QYhEzOcn1bayKV9J">b'White Death (Live at the Sabaton Cruise)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/56694a4a72f50cefba645f48f4b05691120aa9d2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Hr24ciDwkOG1g6y7mQsZc">b'Back in Control'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7ee00c278064efb4d1bdbda5fb751169137cc875" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6a95u4zpVLDOl0NbPt1TTN">b'Metalizer (Fist for Fight) [Compilation of Demos]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7835d64c7f31185dc64d219c28e27682122a734e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5lZSC9nWiCUBg38ncNVVMT">b'Dominium Maris Baltici'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f9838b48d724b595c3328c9a7ba2be9482aeb17f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7smc47wm9rK5Idmpq5GWjR">b'The Lion from the North'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4870817748190c6c8c790e1dbdfbbbf9874aa97c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/26KiJ2QHY2pSYVD4tDYB0N">b'Gott mit uns'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03f619e1aa87164944f60118fc7977fb16799fa5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1pQ9jEWU8A3ifjfUbYI5xU">b'A Lifetime of War'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6730fa65376b6e9b95e433d7b6baff134071e8e1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7cHgjVHwLny4DaHUbEoPw8">b'1 6 4 8'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/be358940605dbdc26d6a2872077c682e7be1491d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7twCfr1kXEckm1pe2DFfdX">b"The Carolean's Prayer"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f6e865371d5fd2c7a1a1107fd884b75c946a8b98" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6imjjOJ63SnfvbYTARjyqz">b'Carolus Rex'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cea3d0bb29111b8b9bf2bd5dbd94d6355e789440" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2w6jeQswb6MFBjZDLiSPsK">b'Killing Ground'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/52569e310e0ef15854651a0a929eb05511d18e2c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0YC3EFSbNUEb55Q2xYqh3t">b'Poltava'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b713279e42ad718d14463efe3c1cadb5fc5ed374" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6gQnl6pC8CjYyd3A1Re4sb">b'Long Live the King'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8cbf977e96a5629390e2b860fc46683d150c78fb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6rObRq2J6xMrB4af05geFP">b'Ruina Imperii'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db2bd7027ee781067a1f6cd9d3a88bc45130c631" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5rmYNc5z7Stvhs4HYtve1K">b'Twilight of the Thunder God - Bonus Track'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/336023c065a29f297a174745934b2779fe5d3f8b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5PQ4pQZQ1CC5YQJSn36o0M">b'Dominium Maris Baltici'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/88b6ac5105ea7a5a6c6b5702602af072e875af5d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5z7hHu8kO7vh0TkG1WviT8">b'Lejonet fr\xc3\xa5n Norden'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1f56812c2370234de1429156fc268efe6c2156c3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5zSYyWugV0B1x0W5ESFvxh">b'Gott mit uns'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19740295d2926b6f0a66327d7a9dc48359e410be" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0TtD91m3UCmluyHjbm5k5w">b'En livstid i krig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/365a7f65162fa852fc10291aca33fe24b07f91f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5DKFYq3RrbEm0Oj48HPFLt">b'1 6 4 8'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7c74733b1baaf1b2530a1244751022f0311ad034" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6Xz3eBYAzk7hpyoKKEuGkk">b'Karolinens b\xc3\xb6n'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8553ad51780318e07e5547898b6307841b747a7a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7ryH14BUJAPM68fmrLiMVB">b'Carolus Rex'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e5c02e5d0c529f929e1077b43aa48d39ed12cafe" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2TbHdQENCC7qpHeaHYoodp">b'Ett slag f\xc3\xa4rgat r\xc3\xb6tt'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1b3f0d6adeb3d704bc7573e44be01086976edfd6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7qAHNWBUn1ZGGXN9dx9sR2">b'Poltava'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3fdab6e5208b8230e30bec41cbdacaf693790760" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/08yJN8BTqnjwNpO9Ali1wY">b'Konungens likf\xc3\xa4rd'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6f4049d01248e410e1e3ee5fc587177806c7e87a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1dkErqdoSMxfdCI5dD2tqo">b'Ruina imperii'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fed837f5724cfddc4757250d6d4e1c564f988900" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6zI64pUTWBz3TY7YqlmJpo">b'Feuer Frei - Exclusive Bonus Track'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6e8847ecdf5548a345a5f6957d575fdf24034213" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/39u8bbOVrCi2yAPbx6PDlp">b'Dominium Maris Baltici'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f9838b48d724b595c3328c9a7ba2be9482aeb17f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3k7ON0LHwlhcZTpuV86k05">b'The Lion from the North'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4870817748190c6c8c790e1dbdfbbbf9874aa97c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5ituyzyJzcinstKfJda1kc">b'Gott mit uns'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03f619e1aa87164944f60118fc7977fb16799fa5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2W4eAByMuSdJWgp53bs1O2">b'A Lifetime of War'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6730fa65376b6e9b95e433d7b6baff134071e8e1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0wdmtYolcechYPLGoqCIbp">b'1 6 4 8'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/be358940605dbdc26d6a2872077c682e7be1491d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6YCuhMfiCaZPLDB9xLW60I">b"The Carolean's Prayer"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f6e865371d5fd2c7a1a1107fd884b75c946a8b98" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1GNkOfn4OvRLkGT2pdzT5g">b'Carolus Rex'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cea3d0bb29111b8b9bf2bd5dbd94d6355e789440" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6XWOTY0Alz0SqnJe67cuNt">b'Killing Ground'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/52569e310e0ef15854651a0a929eb05511d18e2c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4jpSmabRpfi04pOPmPDwnf">b'Poltava'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b713279e42ad718d14463efe3c1cadb5fc5ed374" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3a2uROFIVvhzXA4MpoZVAu">b'Long Live the King'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8cbf977e96a5629390e2b860fc46683d150c78fb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/12roLwPt7D0NKT5qLevemP">b'Ruina Imperii'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db2bd7027ee781067a1f6cd9d3a88bc45130c631" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6VPFIaokWVXfcJYdDIxiSA">b'Twilight of the Thunder God - Bonus Track'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/336023c065a29f297a174745934b2779fe5d3f8b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1bhlaXmJlrplxHeoraA5Wt">b'Dominium Maris Baltici'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/88b6ac5105ea7a5a6c6b5702602af072e875af5d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5ICc67z90b0vAFhTJNTiga">b'Lejonet fr\xc3\xa5n Norden'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1f56812c2370234de1429156fc268efe6c2156c3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3gOLN88WfYiHTrT4bk75iy">b'Gott mit uns'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19740295d2926b6f0a66327d7a9dc48359e410be" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0ehdJpT6J00O7Bg9D4hgoS">b'En livstid i krig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a91194fca81499613c8e00131f4850bbc8924dc8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3T5ftf4WMxOgVIv32XokG8">b'1 6 4 8'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7c74733b1baaf1b2530a1244751022f0311ad034" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1JWE59IjoYrvSsGL7OwD8Z">b'Karolinens b\xc3\xb6n'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8553ad51780318e07e5547898b6307841b747a7a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1rh7SxnmWP1RnofVzZsDY7">b'Carolus Rex'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e5c02e5d0c529f929e1077b43aa48d39ed12cafe" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1PIfGkqYPpEl3iReoPUXfZ">b'Ett slag f\xc3\xa4rgat r\xc3\xb6tt'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1b3f0d6adeb3d704bc7573e44be01086976edfd6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3rpFxDdOMtFrabPYBVr1WN">b'Poltava'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3fdab6e5208b8230e30bec41cbdacaf693790760" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6e2T3IrpDvoslamE5IvLef">b'Konungens likf\xc3\xa4rd'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6f4049d01248e410e1e3ee5fc587177806c7e87a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6p7brrS2TkdvObMupdNh06">b'Ruina imperii'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fed837f5724cfddc4757250d6d4e1c564f988900" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4lsbUYu543VhdAK0ZEpXNl">b'Feuer Frei - Exclusive Bonus Track'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6e8847ecdf5548a345a5f6957d575fdf24034213" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3N98xTe7psHGHdde7FxOJQ">b'Dominium Maris Baltici (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e10011292820057ce5253fbbe36f1fe1ff734c64" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2jMCf4jJfUX8WBtRkV2141">b'The Lion from the North (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4870817748190c6c8c790e1dbdfbbbf9874aa97c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/40u3NJaN1eTLSWe48XoPLX">b'Gott Mit Uns (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03f619e1aa87164944f60118fc7977fb16799fa5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4IFUg3VtCYROn5PhgTzmMg">b'A Lifetime of War (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6730fa65376b6e9b95e433d7b6baff134071e8e1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/64oSy1G2wH4yjUhqEhRnlu">b'1 6 4 8 (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/be358940605dbdc26d6a2872077c682e7be1491d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0hv0XqT0pHTEMgpUUAyi8p">b"The Carolean's Prayer (English Version)"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f6e865371d5fd2c7a1a1107fd884b75c946a8b98" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5yJQvLLgxUUE8q27xXeACQ">b'Carolus Rex (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cea3d0bb29111b8b9bf2bd5dbd94d6355e789440" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5pex5P8nvuDSf9e72JPRjS">b'Killing Ground (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/52569e310e0ef15854651a0a929eb05511d18e2c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5XNY4EBcPSUvGa3j2qWRYp">b'Poltava (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b713279e42ad718d14463efe3c1cadb5fc5ed374" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6uilxSx1178Udbow9qDKsk">b'Long Live the King (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8cbf977e96a5629390e2b860fc46683d150c78fb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/60bOC0GwEpb3UR0SNvu9BQ">b'Ruina Imperii (English Version)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db2bd7027ee781067a1f6cd9d3a88bc45130c631" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6wRFG16oQUGRJrXOW8W0YQ">b'In the Army Now (Bonus Track)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7ec42fe68e4f8ec1ea96f02bfc42f91a70c71b4d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6DS5Vy8vctsFMNf1NkxzG6">b'Dominium Maris Baltici'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c86ad27b1659581f6cffb65eaea35f8fee12a19a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/04NBHojRP1WZy4Npfv26oL">b'Lejonet Fr\xc3\xa5n Norden'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1f56812c2370234de1429156fc268efe6c2156c3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6swsOqpihfRfKJayNxrYBN">b'Gott Mit Uns'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19740295d2926b6f0a66327d7a9dc48359e410be" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6k4uBlalgSN2k6U2ZEbhsS">b'En Livstid I Krig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/365a7f65162fa852fc10291aca33fe24b07f91f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1FIlu1m2zaugAFFGYWMf98">b'1 6 4 8'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7c74733b1baaf1b2530a1244751022f0311ad034" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/66zGDjrtj0sjDdotG54XUx">b'Karolinens B\xc3\xb6n'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8553ad51780318e07e5547898b6307841b747a7a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4NLmZLFRNAip9YvlZeAyph">b'Carolus Rex'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e5c02e5d0c529f929e1077b43aa48d39ed12cafe" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3CPvFIlWC546SaRcWzxCDA">b'Ett Slag F\xc3\xa4rgat R\xc3\xb6tt'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1b3f0d6adeb3d704bc7573e44be01086976edfd6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6rclHxfLYF1CRAsRZGGdIn">b'Poltava'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3fdab6e5208b8230e30bec41cbdacaf693790760" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/231x6gOugDkMRMUzxN4w8B">b'Konungens Likf\xc3\xa4rd'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6f4049d01248e410e1e3ee5fc587177806c7e87a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0DsFzrhwZAkY1kEpzlGCVn">b'Ruina Imperii'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fed837f5724cfddc4757250d6d4e1c564f988900" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/75qg1KwE8ybSjARHUtGNGr">b'Feuer Frei (Bonus Track)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6e8847ecdf5548a345a5f6957d575fdf24034213" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/44AkSX4VYbPdcunxCFNNcy">b'Preparation'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/117d9a82aa02804f1f830bf76983f7fd0fe150d3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4YsIfHmuMbrKUThUg3KoLo">b'Turnaround - feat. Camille'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/818d0d2c77fa3eec7918f52d15e08c9ce7d41224" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1L1lDTt5tPOBykz0yhxjax">b'The Life Plan'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f980654ce39d2a182dfff4aa4c63908c7b0eec86" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/50xhyWRi9VXwuPhKBuYv78">b'Driving'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19c73ca7cae759e5818d1c0014df4df5b684b205" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7cNZRhV3JT7je1RNMnE1EZ">b'Equation - feat. Camille'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1073814f000e3b71a7f728f26f6f7724f7504829" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3RqTksleJCNbYUNHxBMZIa">b'The Interview'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db35cfe80b8f5eb3dfd594e4b011bc1ec985e3a0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5w01yEBLJoiuUN2w19jWGi">b'Le tour de France en diligence'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4523f959a117d445d7e2fa9f80dddc2e420cae74" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/50tKvAWWa4cvfNw12sAqJd">b'Plan B'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6996203144ea93567a1ff8bf3e612eb3e0834dc4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2BOf7O9tVclbh06SQt86LX">b'Getting on With it'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d73b5a1672dfd9fe86298355d6731917ef2bd658" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4lImDDRJjc9lbIAqYwIfpC">b'Amongst the Coins'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2a9b9e261f6f1bb1baeebb0c7593084c0236cc51" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2w9OL0XwFO8WolsTNsxRtS">b'Top Floor Please'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ec4c319f6b5b9e31d6d18a76b2752bb4839696d4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5ibfTORP8t2PQAFq314ct7">b'Ascending'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1537683d201c47e49206c7c58eaaeca971015bcb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0XSw70mXSr3UyLZkXK0SB5">b'Parachutes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7cce1dc82c8d8482c052d1d1d4f2f7f9433391f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5RxCmMFxxSKl0w3oTP1Z47">b'Draw me a Sheep'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e6a3d9d454adf41116db97756ca9736ecae55345" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/41Uh20reIST1nvcjqk6fJQ">b'Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6844c38e9dc3982d897ce912433cd8ca3633b679" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2j95BVgGMmbW7n3kGjgo8k">b'The Fox'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4d91eb6b37bf3d4f5e78c19e35adc14ef0cb196d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1iK1O1QbealcVmtMzlAUec">b'The Journey'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d1814603fa1eabb448bc87d2fd66620fa2dc2ff5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0xIqZ8sH78QUjW8221VGAI">b'The Absurd Waltz'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03a0ea7436770cfabbe982852aae5c165373c6ee" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6MHoQcwsCxP4xEXLNKDuTA">b'Turnaround Reprise - feat. Camille'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/34cbe303447c9fd11142e16e0927789023b9fbb8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6BB9KtMIgKqRGVr3WbAMs4">b'Recovery'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2c74cf543d051f916fbf2143a48573996280eae9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/38uSo3jGcCEMTZXntwVy9z">b'Trapped Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/63c5e5d6566f217ad6d92e1dc503d8c36ae9d98e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Q8caXqiINwjRPYOXSrhos">b'Farewell'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/168f5b38cca4ccf2029e9bdc2fa25080f5bccb22" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5EIZV1SGsgIfTcbPtGQoO7">b'Escape'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c7d72bd9f3139003b609b24f45cc61c78c5cfd8a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4FfXlNmBufY008PLP5qf13">b'Finding the Rose'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e559b0edf764dee5b51fe3b781dc809362a32eea" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3MY0WMeO0BU3ChdfCQbkZC">b'Growing up'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d3b11d09e11f8e2b79ebc47a59d6500f6fe69433" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6mWcqC1v28g5FBFEOd4NmY">b'Suis-moi'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c49243f95a9a5bff56be6874954b7031ed2d3a37" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4OmCVDKxcCEzuZDxCpaxVo">b'Equation'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5aa7fd8781813c387e231f454025f63bf4287f3c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3G8T94vJ31g49hwdvTlhRA">b'Suis-moi - Reprise'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7e815653a8c86b13095736e2728f0c34c508cfbc" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3tFXI0Xhjum8Zj5T2SoBeX">b'Preparation'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/117d9a82aa02804f1f830bf76983f7fd0fe150d3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6az5eEGgLdpQ08HxvgFsy9">b'Suis-moi'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c49243f95a9a5bff56be6874954b7031ed2d3a37" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2uZsBps9xjY4KbWlKSB7zh">b'The Life Plan'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f980654ce39d2a182dfff4aa4c63908c7b0eec86" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Z4mEFIiyfJPCVFi85M1uj">b'Driving'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19c73ca7cae759e5818d1c0014df4df5b684b205" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2MppombzTgsEn5AKt8UfpE">b'Equation'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5aa7fd8781813c387e231f454025f63bf4287f3c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0yKxSuTqfQqGrEIZNd9O5J">b'The Interview'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db35cfe80b8f5eb3dfd594e4b011bc1ec985e3a0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5cArTcoAhu2VqeA2A8Q4Eg">b'Le tour de France en diligence'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4523f959a117d445d7e2fa9f80dddc2e420cae74" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0TbrhUBBDYdg4peYSWkDrH">b'Plan B'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6996203144ea93567a1ff8bf3e612eb3e0834dc4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4MdAZakJZEAHo4eZfIsjhA">b'Getting on With it'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d73b5a1672dfd9fe86298355d6731917ef2bd658" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2Wt6Dm5o8w2rZrqq8Lk2eD">b'Amongst the Coins'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2a9b9e261f6f1bb1baeebb0c7593084c0236cc51" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/48RVsFX91oMCgyHLIGiuP9">b'Top Floor Please'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ec4c319f6b5b9e31d6d18a76b2752bb4839696d4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6jQTxbU1md9Yqy4AdwAtIT">b'Ascending'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1537683d201c47e49206c7c58eaaeca971015bcb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7B5vU8kpMKtKPUYUL2uPZl">b'Parachutes'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7cce1dc82c8d8482c052d1d1d4f2f7f9433391f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7wiq4sScK60CFn5avffqpX">b'Draw me a Sheep'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c86dcb6a73e488f27e4b4d09f1a18e3b1154f2ba" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5BtDv6yqCkc3DRg9TU1mXh">b'Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6844c38e9dc3982d897ce912433cd8ca3633b679" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1UfMwfXCX9kJZFscrlzlak">b'The Fox'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4d91eb6b37bf3d4f5e78c19e35adc14ef0cb196d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/75rR3Jdq6tvSvaTg5Kyqid">b'The Journey'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d1814603fa1eabb448bc87d2fd66620fa2dc2ff5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1BR5MKIbsbYRTzDbmSS2zl">b'The Absurd Waltz'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03a0ea7436770cfabbe982852aae5c165373c6ee" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0w4ATwZClNEQtjWWBQuS2N">b'Suis-moi - Reprise'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/22d5c05128aeecb8d063a360879a859cd89c6cb3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0eb48CN09Zt5GJIAZKuBt6">b'Recovery'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2c74cf543d051f916fbf2143a48573996280eae9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3n8ExGarwafPJVkDyTf8ue">b'Trapped Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/63c5e5d6566f217ad6d92e1dc503d8c36ae9d98e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1mlw714RqSXFD4vxkTMXR4">b'Farewell'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/168f5b38cca4ccf2029e9bdc2fa25080f5bccb22" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5hgcP9qDTCaxRGVIOtdVMn">b'Escape'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c7d72bd9f3139003b609b24f45cc61c78c5cfd8a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/42eA34KpQPjKjXjk4muBl3">b'Finding the Rose'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e559b0edf764dee5b51fe3b781dc809362a32eea" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1oSxnyFsPhlaeoNzyJRiDP">b'Growing up'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d3b11d09e11f8e2b79ebc47a59d6500f6fe69433" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0L4AxEk4e4I6N58sN3QIPf">b'Lux Nova [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c89878f68923059487da78d4298ac92893771a28" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2dhQkNtsQhpSoavxujMFFj">b'Wrecking Ball (feat. Marius Beck) [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/77ce3fefeb03fe26f3d3d06eb5b6df3b5f3e324e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2VRDHdOZlmbuOm1WGMshv7">b'Come, Sweet Death, Come Blessed Rest, BWV 478 [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/14262ad52ac7fbfa6c9b8defc91967d6928a88de" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1SSjKfoXzpbabgQO3EZo1M">b'Man of Constant Sorrow (feat. Marius Beck) [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/654a0c64c6e4b703453605064f6cccee91e0cd4f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0Vqoe9qdBC68xE6H43kjC6">b'Hurt (feat. Hila Plitmann) [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/86ae82232a61a56a82943e41d5c811838715c230" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2yaDUSJxGALbLLgZ8iJlEu">b'Time (feat. Hans Zimmer and Hila Plitmann) [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/947545dd179f10610efc7da668422da67b2b9cb0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2OSqZ55cCyoY3CQS7G89BF">b'Enjoy the Silence [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6ee5b851a77ce0c6439b4208ca2bad1a856afeb2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5Bku5fRkp7qP6zeI0rFwzP">b'Down in the River to Pray (feat. Hila Plitmann) [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e3593e2680a5fbd48a76cd1a589ce9317023d54a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5uEcUTIYfAcILfTy2QvUiP">b'Interview with Eric [Live at iTunes Festival 2014]'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/77XACMgupDiBp0QdUy44dO">b"It's A Dangerous City"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d3f02a61cf03277582ce27c236dedfb6095e0cd0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/65KxRilT4DkXtqJcNmMGDW">b'The Only Way Out Of This'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/799b6890dc321bfc6351da4f9900e533554047f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2FhR9iJ4P9DVrubshd0Igv">b'Use Your Mind'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6898c25c8fecf2127998b5dd154ba99ee6524b84" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6vqkOTnKmyFzfZGdaXqFR6">b'A Machine That Thinks And Feels'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a41282349c500ade01a903c57f6f3c8bf95ea70e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2BQSWVA2ysNQuNjESMg8k5">b'Firmware Update'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/424f24e59dc5cc9085ebb981067480046c8f3ce8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/38gSv3pgidir4S7i1uzLFi">b'Welcome To The Real World'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0d46ddde876100a2f1a714d073a9465042d33e05" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3alLc04adAlFoXx5wVGLQ4">b'The Black Sheep'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/da384d2ddf103087a2233b61077511bc80b7598e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/03eDbQyGoOVXK0SEjnuQen">b'Indestructible Robot Gangster #1'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b103ef1d1e28a2bda1ff17d829094c288e4e329c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/08BeMelsT47imLrj9g2IfC">b'Breaking The Code'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/deba2a57f71fc19d2f042f30cc5a103e9fd90184" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3O3VzOzqy5v9oJjynR1r1R">b'Rudest Bad Boy In Joburg'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/03c02469d077535c6023db5867b96f3056cec4e5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/21XfObGACyLgJljPMh3pQ7">b'You Lied To Me'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fd608ec8bb77c9bf1d0e1a432d5f6adc64026d47" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0yvjOUEMSWMd06K12g9vJf">b'Mayhem Downtown'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f0ae962ae0ef24a482241bfdaf8d1a3c03be3db0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3k73sykWeFqrWICVHAu4UC">b'The Outside Is Temporary'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/621de41c99d8fc74ae6382b56c5921e5126308dd" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3JemmqN2q7AfOMq5NkUp7I">b'Never Break A Promise'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/dc9760968dbccca5e3605e68b600c22c526ac960" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/22LFTqOKldAMlzeoAADDB4">b'We Own This Sky'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0685f82734f7ea1ad36ce36b8d537bc34a9548a1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3lCuQFY3l6aFDz5k1Vq9H7">b'Illest Gangsta On The Block'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/be13206b00d9f7fcc2757d8fc740acf2d3895f4c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1QheEzPkqoUQkIPGbG6gkI">b'Dreaming of the Crash'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cf23c7182cf352325b7c87273a53482a805e04f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/18z7tK7u9DcDw85LYRR5Fe">b'Cornfield Chase'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2be1387d787a1e1c7c2b7ddb5370126a769ca0f1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1uyB4BHbIicheenh3BgeQ3">b'Dust'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ab31493c9117d1b89210de16fa77130cb46dc878" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2H4zwjbv0D0ggDhf0E8j8j">b'Day One'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c0010fd7b7c3700ef6f5db0c99e138cf5cfb469f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1PyEOnj3tdaHAcDcsqTYbv">b'Stay'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bebce4572dcac48266118ab893da5422b15e3711" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5pmXIuP7KNq7AuCKmPUIhO">b'Message from Home'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c22dd801699f697a49adb6d97414e80c290e1a97" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4Ty9v3xcNh5pVuf0iq8Dfv">b'The Wormhole'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ee6f57c338d90189b11e7a2290a364a988a083e4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6WVRhBxRMW9fn6sRkt2gWn">b'Mountains'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9b8c078407a881d8b16cd2cda53f984c0346655e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Vef8GlFWEzrP23UwHjWWl">b'Afraid of Time'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9d3f6883bbba6bab52c0a79f39a69c30ce173281" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0ihuV5yZpOS8P025gKU17V">b'A Place Among the Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/11cf0a99dbeaa92824447c9ba90113a240d6f77a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2CvYIKcGlkZTsjhAViX0Db">b'Running Out'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/188e7fd70e169ac6e1480479e78cf80c2b23c640" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4lPGM6jGbrjcWYal4StjF1">b"I'm Going Home"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3751988c6a7b38e64ae0fff581d306192e3af428" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3wa4t4bc0UjG2eSGgXHcaR">b'Coward'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/99f563ca03c4a32347e1de6c3e0b7674abb199f2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1TjPCg0Ty4ZmoFoWseUfcY">b'Detach'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/29cd9cb1c4a430fb83046e5fdd2ace13837d68a4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1olO0IZxJUM6COX6i57RGe">b'S.T.A.Y.'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5d18c8bcbc514309eb49aafa660c1e29657801f3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1TBJRUEWgRCKvcaVtojDad">b"Where We're Going"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fce6b97a8c645cbb203f90d88d2d631cdfe9124c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0nsRUsGQ16CUfpuMYUcXui">b'1976'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e0037f8ee44d98f9632c8db0de867af371f114d2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Sfg1slt1kSh7Fc61xe4JA">b"I Could Show You If You'd Like"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c186c8ec73573d5a7eeca6038113d40a6fba7899" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0DnRAPLe4F3uSp3V0vfl7O">b'I Hear You Knocking'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/07wD8FctwDbQRtcpeRCC8s">b'Stopwatch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b2df034f8709314f5b54a5039151f097ec7bac6c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3CpUveVGOiPg7KoF3dzX6c">b'Into the Red'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b76a122e97e02900683f0b61dc4d509852cdd4b2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5w1uXNpnOZYozGVGtPF92t">b'Budgie'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8324c31a27dec3906d4dc8b6fa84f55a27a70f70" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4WOUQTnNLHDe9Mu4VXKnH4">b'Scuderia'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/92226c85f54b90edfaf9e41b1fec3becd4c23996" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7o57flkJOvtYbTGf06Tfco">b'Gimme Some Lovin'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/30wx36smNBwChZtqN7y9ZY">b'Oysters in the Pits'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bfea99b71688b8b3e394f3e010457898969b9632" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/096MBm8jkSK2DDlsm0qLz6">b'20%'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ec97b40df3b8892e5911cda5b349dce4d076f529" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/64trWhfzznT0LvxhEwaTam">b'Dyna-Mite'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3hSiNIBqMhneMwto86cfJx">b'Watkins Glen'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/17bd2ae01b5dab4b4f22a594b64458df013d4d2d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6uJZIOmMW69Itqz3oFl8oJ">b'Loose Cannon'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3d3e186fe0fdf49aeb4ce09a34983fdfab358360" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6c5gZc1p3yfikDbszo5ths">b'The Rocker - Full Length Version'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7kxPFFCEvy9a6r4M3DkROa">b'Car Trouble'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d073cd4cc04a4984e68d614f42c8e1386d8d773e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1wwuX8yd1dRdIByXtSAF7y">b'Gl\xc3\xbcck'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/737dd279ba8c8a8f8b022cf414da1b5919aa9422" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0BAzCX6SKYnguOP2NQLaZB">b'N\xc3\xbcrburgring'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a1b972524d2dce2131348c7dd43312a40fda42f4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/43KCfgb51J1TlWxsCexWV3">b'Inferno'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e7f604dec44155027ff6b3e9d3f7b1c5fab7ff9e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0V19DRhypC9OMCPjmWh6pR">b'Mount Fuji'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/808d2d5a06d93c6e6504e169707dcf622a50c6f4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1oOR9iKPjCeVbwAfPwOVoN">b'For Love'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/868f0dae05d5af94853f09916ddccbc79ff9d7e9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4HpmNKTIaYoAbmWs346doh">b'Reign'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/844832421552804ec67ce491d1da4e36b2adc4f6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4NMousipzpOiyFGvNbZQQC">b'Fame'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1njhygLOG5xCfVwNPktfgW">b'Lost but Won'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/23591d613a1060322b5a14ad5faf87ab3a8b851a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2RNbQ3Au5uxuGXwl9T6ViP">b'My Best Enemy'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bc88764ed0b68302f9a941039746111f3bfea01f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5qU8BOknf6TOX3oaYLyJ4v">b'Never Take Off the Mask'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e86f57298eb473635ab74e840b603ab7b35498af" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3GyDfUbiYr92ZWvAwEYbk9">b'Absurdity'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/859b8a97b739b5c2112f8c7aeb125c80084c6dde" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3eprvKYDkb3pPfHo7bznyY">b'Silver'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3a7f031a63648f4edca444ab11b11745e2211cf3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5LKiPYbW8mp3IlzJlZN7gE">b'Ride'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bc43030f8bff177df58f36fa7b5fe990e1b8b9f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/41EHbOHTWh7tJYS61sPEyj">b"You've Looked Better"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/254ffe09eba92a32a136c5fb2f1fa3eb00482f11" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/62nDt8aUOzT83xiN2CDclC">b"Red's Theater of the Absurd"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b584eab57d7b6f6489fdd8ae09dd5a84c1a1f6da" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/48nkIwlZ5SxilzEVEuQAaD">b'The Railroad Waits for No One'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/436ae7e2a593c13bc8ce4e468da312df8f80dcef" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2iGyt55eIs5grojcOHMmoa">b"You're Just a Man in a Mask"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bc118046b60201d87ff2a937125f42de3f393067" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2Ej2zbh1YjNfn9lOjikqQY">b'For God and for Country'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/551527d778c24edf6a0a7e2478c80bab96eb8400" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/50DHVWYNc8m7vwn13MrDIO">b'Finale (William Tell Overture)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/cb665cd81e29393c516dc7b8558c9b081dc1ffa5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/11DK9pEl7jXwaieIStJVNz">b'Home'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6d07ef779ab2eb71cb0460b6d28c3f4d8a3a96c2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6nYu5ZYwgCnnlXExsU7IrV">b'Look to the Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/09b47b214317d872de53ae6f48b8ab3f2ba99961" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/397yoZNqC5vI6Mv1RndYAv">b'Oil Rig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c93a7ef2476e5ca0c7b56c92b9994dd810d02671" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7g2qIDrTsOBcuQoqOYrlXW">b'Sent Here for a Reason'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a8de9599b5aa6e82dcdaacf51b86c8b1d7519744" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0rOewzZtrHMUZhJEmnQWhn">b'DNA'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c19288e471193f47d1bc3321f019492d86c05a7b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3xC5DoYqRz1sa7x29jiQmi">b'Goodbye My Son'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2a67f8cbc59e3a5862632ebeeb35f774d2c42433" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/53Ds5FlTECLJdp1U8uAPEK">b'If You Love These People'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e1b1d05f0c8fdfd0cc3534ae4846be72902e7269" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3jUI490gLKNpB3IQiUPehG">b"Krypton's Last"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7cd16824531954637643a0a90ce5a716efc134c5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/11lHYUwcTVw3Fe3Yj0X01g">b'Terraforming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ff758bc0df952c5c66d5d7707e67e767b44ef1f0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/402nvu9q1u5H70dsnozqAo">b'Tornado'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/56fe05660d939282d605ce71b7a65ea5e498cdfe" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7344DyATO9juFh8pE7gyJY">b'You Die or I Do'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a87731af3e73ccef67b31b30a1cbf5f4fabfbfe3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1fydE7oCSSVqbC1GHNh911">b'Launch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/12f14a830feec4127a39d1ea829604128a30bc42" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4wYrfUIsSf75rO6kGJg1GG">b'Ignition'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a6fff592d4a6580fd8ccb79d89287f14b4e543d4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/204l3WtIvFAluKlWnxnH9u">b'I Will Find Him'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4115f784f56e00ff415dfaf370f78244b8333938" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/419g5poGZQmjDO9hNinyvV">b'This Is Clark Kent'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/74aaae695bdc5f7597a6549a027a8b06683b7ec5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4e8Ybn49778i1MzMCxeSyW">b'I Have So Many Questions'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/05722d65baf8192455416a786dae9cba80787913" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5ezYGXyrLp7AhlF9lYbtgU">b'Flight'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b783efb50a631ad1a4d412fd0a16dc7af7e29837" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1aeKeBuSza0rfAK3skCo36">b'What Are You Going to Do When You Are Not Saving the World?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5be374f5ed27ea15ead3025ba493b8babc363484" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3ozlzGZr0dHYTG2b0qHFDK">b'Look To The Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0eaa0af12f863e38be643e6fbc36e07b1376203f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/00q26kdufrTr32FZEhnRRO">b'Oil Rig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/551511f883750426d832429ea69e79fb38e4ccb7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/471KnUtGm9f9uUf4w3zh2W">b'Sent Here For A Reason'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a48c93331c77162f01bfd7f35acce448cdd56a9d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5AzDjnycNKHdCJvRYuaEYr">b'DNA'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/28b75c46084f989f54b1e4cf461d579b1d9c35d3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2xCRzTjzlmEWUGTzdqD6oA">b'Goodbye My Son'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e03453e246f3af39033a3ef1e67a1f88d0ccf265" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7hdOBO7D4OXdme83CBWlpc">b'If You Love These People'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5a40ac8aac3771586727201f58b00b60c5479e17" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5V1s2k3rPpvS44ApYJd6dD">b"Krypton's Last"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bfe0a549aa7a77bba13e023d83a3d89efe9510e7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1rKmyVsZbvKtkGhQXwqj4S">b'Terraforming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b98ce6d6b37fda8846d19aec69eb3d3cce08936b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7Gd4zPmPcTALeycNywdsJS">b'Tornado'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/aab01f1da519afa23a6b7d855ed905930e29155b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0lE3dyQzrY7MSrrz8FhA9F">b'You Die Or I Do'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ccaf385ab2f2938ea40b909b91de8cc441995fb7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1hO13iCF26gcB5aMHJHVHQ">b'Launch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f07636fffe66838f4f21768c1685cb0c032e2421" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4KrDQBFECvUCswxEGC0vTt">b'Ignition'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/866dfed2e90e2792c447fd3cf2f8f7387bf400dc" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/252Nj2aDcNyudCn0MOyKA9">b'I Will Find Him'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/79a34d190e4ca35e9eebaac0270d97fd6dc3bf56" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5FzIVQ4sA4o1heoYVNtbgv">b'This Is Clark Kent'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9ed5cdb978128db0a2d979f33fe0d43066cfe852" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5cdf0IFc7Kcox8gJ4Rvlca">b'I Have So Many Questions'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/44fa3261738c56b06ef57c97a61e1a460224e5e0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1qSt3WGV0KxfgiQy62y1uy">b'Flight'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4eabe1391c2b27e6d4a17a93df18094757d9bbb0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0p33y1zDAoqHbBtJl3YwsN">b'What Are You Going To Do When You Are Not Saving The World?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/46d25e5f08c5754884709c70fdd554d617036ae1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5hmQfjvC7Tal1XnBPGGEXm">b"Man Of Steel - Hans' Original Sketchbook"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d9106a10d635620b10f6196b218bdb2ee9be7abe" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7gTYewmZgczseeqkjuCyU3">b'Look to the Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/73b973e4b4152e39179d2bbf7e6295b06cc3c342" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1FnnaNOkBCiAvbLgzFrqFa">b'Oil Rig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8bd7f759964792d5f6162c00dc99308525e4c602" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/39KnSmqRkxkIUtiWxzB7nN">b'Sent Here for a Reason'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/33dc2caeedf9687867d7bb05ad6fe1206625015c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/04hUNwXnVUTb3KPsabTAC3">b'DNA'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/25be56ce2fd022ad470a6e4fc3a0ca5958445d98" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2MrSDEqZrHEahlvjsveSZ0">b'Goodbye My Son'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2e002edc106f540c5247a3dae1efa05977d52c36" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5AyZoinZOJH7vyH9Qay6bh">b'If You Love These People'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/19deb7dd66a0f84ad9f10c6a1a41a4d57df483ea" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2da9wU6Osd6UoyZodzcgz1">b"Krypton's Last"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/92ce83596fe00dccb450d73924fde275f753235d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1ShzEWg9kGAduVC7f7Sjl2">b'Terraforming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/981f1c6ca8408594d61b4efebf3ae6a924965e7d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6ffdNL410UPywBSVqJPEkw">b'Tornado'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d786b9d61eab97456c516dbf6840a13d84e57231" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0nlVkMP83sMo50B9hy2dSW">b'You Die or I Do'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/06069f6802c3f3b411be8dda54af658b56a82862" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1dvWl0B9CcKKYnj1NqQ5tx">b'Launch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a5d65d8358160697696e50ca7bb812fc63242a53" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4r6hJg7eq8WO3x6N37fA2J">b'Ignition'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/de185fd12de4549e76c71a276d614c93da27cfe6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/45A9ZgZVMgXkjVfUe8VD2B">b'I Will Find Him'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6027a2ca1c99abd83bb4f6a9c11bcfef81142b27" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2pawAJP4W7gxcO6UMPdiEN">b'This Is Clark Kent'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/25edb9d1bd15df89973870725a223a23fb1095bd" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/36JiSvWmuHrfMMk7JYXsHb">b'I Have So Many Questions'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/696a44e46389a68afcbd384a699325c170a012a0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1y2I51IqxWCd2rITDEYndo">b'Flight'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/eb68eb7952f61aa43c9df82ff7edcd2e5b8368bf" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3g2tB9iQhbyiFPboJJDtgp">b'What Are You Going to Do When You Are Not Saving the World?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/02a96132829c432ef38c59ba506dae02ea8591de" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7kTeXJhZZdK9Hwq8JJINq1">b"Man of Steel - Hans' Original Sketchbook"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2cd2e15e0f8c8b327667a398bd30f904709630df" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5yMA1K1rRZ0gQ97IxNTnpi">b'Look To The Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/451c6ada80d302e8adc0d3b68e15048e25dfcb99" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/58zeBv9aYxSfRqbxl5kopr">b'Oil Rig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7c13bd7304ddd88336faa42b2bcbc7fa4385bc43" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0FSXOPijlwnJw0d1aqaj5B">b'Sent Here For A Reason'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fda6c822c4958b109c5fc16a9221fa78e5bab032" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5oM6zPNjh8S6YazBC1bD3W">b'DNA'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9b396f0e859d1552dc10c0f5e7e1b74bcb08907f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4DVnMQ9sYLu0qN4cpoqDSD">b'Goodbye My Son'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/192721e4045abe641029ea1dd460a6a218e26537" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6L4KfW8ZpgdGRqk5dR5aBb">b'If You Love These People'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c9c2b61b79d1296fc6da9b6fc46b291d767a16fa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ycX6D6aMVotxve2j3BWIv">b"Krypton's Last"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f90c672170c3a688f362f39c2374281206fca4ba" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/32fykcM1wRShEjLZHBAOta">b'Terraforming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/65dbaa88276bb92e06bd913a41a088e5a91e5aa0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/78F6pJuJheXZBXywuywG2Q">b'Tornado'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f94c460948eafff614d7a6249add9aa3e921366a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4t2RTeAoC1gEYKzcqdzeB9">b'You Die Or I Do'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9e9f402f6f461e27261445802a0577a495351b78" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4kSmMIDFIZNFqJQym6o5TD">b'Launch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0181ed04f20c0812eaecec0d552d2c1578de25c4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7GIOGPYteEwZP7NdApPrcP">b'Ignition'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b3ea804f9fce58830678efa31d85e85982ffb59c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0Zt0jMjNLE0VOoq6k9CKy5">b'I Will Find Him'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e1f1d283f364d2c5baf60b4f54f8cff0eb0e3734" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4UBkb90fOrZbQJbvk7WwYB">b'This Is Clark Kent'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/305d2ecba7336cfdfc0791242edb73f274ceb3d9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/37eK6hwSj0BjEknbiIZhtn">b'I Have So Many Questions'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9094bb8ef4a414acf08a1d7a03c5361c205b1b18" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2gLjB43HKKLNcz3Km15TQK">b'Flight'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/98e180f3920eef0ee5bc54a5baa7b1839a461eef" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4KVVmODIQ5bUbSCSzdmlaN">b'What Are You Going To Do When You Are Not Saving The World?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c90f8f15673563bbb37c1012b155542f7b36f30c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2U2B96s0hu6pGqKyiwyU9E">b"Man Of Steel - Hans' Original Sketchbook"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f305ea37a036db7836e52e633a1aa715f5afa4a9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/10730204EuMeAfMwHIK232">b'Are You Listening, Clark?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/517b720eb34d09aa4edc721a45005486fde1d7b6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6kYMXEuj3yBNmpiENPJh7N">b'General Zod'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/89d5af601293ee2d8909dc56d691d62402098989" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3nHGayJekIXFsbVHETHvzx">b'You Led Us Here'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/839ad2985a099f628c5bc2aa634cd8a71f3a4646" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1L9uy6n4rPbFLQCWVmlXQw">b'This Is Madness!'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f4f9ed7297586270a797ea313043d61f7c56a812" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/251Eg2T3wwpxQgDefgByIw">b'Earth'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/195ee5d21885a7696f54eadc128f584a8fabed33" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1H6pg5Bu10kI7WrWszRzVr">b'Arcade'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8c13a207c536f91ee523578f2ac141faa5b6dbc1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1ynhFCGBSZ91AmVXftWcpc">b'Look to the Stars'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/015db771bf6e08d39eb5a1783703c7f5d6afe7c0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0oWqXv9R0Qu3vyaILcpcbE">b'Oil Rig'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c5d3235496d7bd9b777b3f574101cc6f004884d1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3qRZgExE5XFKrm4cqyTexE">b'Sent Here for a Reason'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b289b612f621bf862ab14ff8b9e235eb121deb57" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1yuN8qajesmszBl24hJnPY">b'DNA'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1526ef1d3115e7e92e0e03a39801ad9949c46f65" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Bl9iYwrc32eJztVnuljrg">b'Goodbye My Son'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/477d21520038c330e0833374ed0ef488b4973363" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/04CdDGjAGNdmLBjJnw0kqI">b'If You Love These People'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a5485039ef8cd5aee9b5b1f3b721cfa9294581f8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Md3NKRd4ZQFmLloBdRPNE">b"Krypton's Last"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9f4196355b047f00c0efe1a450f5944603a61cd1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2Fo8jFNpBHCNhLBPT6tgu2">b'Terraforming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/94fda22a387c47a3c17f171feaa96d74a96dcda2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/08X8SaxdGKBtvDNTZ2Pbgs">b'Tornado'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b95abec1b5fe04475612338aca54ff925c121e62" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0v3ScJmDnKVDDb0Y9l4TFk">b'You Die or I Do'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0e3fd3ef586fc0e4eb84e89d4ae6cf20d15a6d79" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6ikfp8LeTFkT0STIzp90Nv">b'Launch'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/64b6a3da372d1a87b9753d0f246a947e6f2141ee" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5OY8BbSVW44ugP3rtWunHl">b'Ignition'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ae8595e339e294a1e4603ed233874a43ae041115" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ohoKdBvNhld69KBOXb6yi">b'I Will Find Him'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8f57756f01c773a3226a4e25ea97f1aebaa0665c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7fAdVUc9h49EeBw6RrHccp">b'This Is Clark Kent'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3c6c7d83e9931d8a8632c57f59ba0619479700d9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/38jflTFUEg9TZcCl5JLaSl">b'I Have So Many Questions'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6191b31bc90933337198001502a135e77b299972" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/05Z2JqKejuY1msOLPl6nZa">b'Flight'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5eaa8d56ae625ea63da8e505f36566f3f298e1b1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/229lqwvjAJuDgRCkSXwOJm">b'What Are You Going to Do When You Are Not Saving the World?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5815771c2958a146f250ecb417e137f487975968" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3x0u0TFu2JoGUIERBEd2Lv">b"Man of Steel (Hans' Original Sketchbook)"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bc2a1e0514551795af369ecf352db35e276bc137" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7CRhGUrCGVhJLjGyqUgmB3">b'Faith (feat. Lisa Gerrard)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c484bfaccf25f801c88d1a4b612f6181f3178877" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3qeMeGS5kPeSUxIwDi0BlP">b'In the Beginning'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f48aa0b0f00476c35a12d4d7d64daf85d4f79c7c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2TDc0uWAg7MV4ZeSUQrzGF">b"Roma's Lament (feat. Lisa Gerrard)"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db68084d3cdf7aef9fdc501be268ba4c6f030b68" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7pv2x0vUNlNrHbx74jEuS0">b'Hope (feat. Lisa Gerrard)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ce499d9bf3af7f09bb51c9c7314f1f6da56e47a1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/37mJl0Tfs113P03WIYRr4N">b'Journey'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/34da08be470b52d619684935a863f2126612398c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6OCpJreFO3actwHhwXbDQM">b"Zedekiah's Son"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6f6228807be376c4c7a13ae7d16698ebe9d1af45" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5EM1yEu3wnhe6Axk9v5QDX">b'Daniel Prays'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d84407be5615742f022be883924ef18ed9633563" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6vbUKURYedmMPNEOCbwIMd">b'The Road to Jerusalem'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4aa22ae4f19173eb6672dfd1ddb7abaaca7f64c0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4A4XEjQxp6qLHiRZ0xH7Qy">b'Pentecost'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6a4df7d8e2c73cde3158f3b3c5fb31d76cbe9864" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4yU3RNHYE6Rg1ZcZ0n4YCY">b'King David'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/ef34df727cce9a83f524cfa51326198366ce2acb" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3lDFvrD4NEDiwhlmw0Xwmj">b'I Am (feat. Lisa Gerrard)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7e01f8ce59fbce656f9f1b46eba0495b4f293be4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6BmrR6PrnLKBWPxqMPVOGo">b'Pray for Us'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3f1a14f5483d1b574a4d5638125dfe3e2730da4e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4nAHwd9mYtBNfyZqoGq8FI">b'Free Us, Save Us'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/887e634047708eca8c1a490fae4bc3c7b0b0bd58" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1cZj9T5VJr5lr9ewvUTtM6">b'The Nativity (feat. Lisa Gerrard)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bd97432db09455a309ebd91467d1da35e89e82a1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3sM8uy7Iml0IHgdyPrdF75">b'Creation Choral'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/847759cd5266711dd4af723247e2b70af56dd336" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7jRt2Wg4fyWR68FVbAfa4s">b'Rise up in Faith (feat. Lisa Gerrard)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a4860ac7abb71249094ef35fd24ad7e5614edf3b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2xDT9rEarArjwpo23MMtd1">b'Faith'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c484bfaccf25f801c88d1a4b612f6181f3178877" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6SZ0f2Mtmv3cVJ8hYiXbqi">b'In The Beginning'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f48aa0b0f00476c35a12d4d7d64daf85d4f79c7c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/22kWkNYzCXaLOGwXkdfJxD">b"Roma's Lament"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/db68084d3cdf7aef9fdc501be268ba4c6f030b68" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4jIDceoPped6pJjraSvzJL">b'Hope'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/acb950fc815fc8846b1860989b9a8a50f10fed04" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6CfCfA6Xhh8dWX7kxdpq95">b'Journey'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/34da08be470b52d619684935a863f2126612398c" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3lzAOr79xNJLgMZIvEgV5w">b"Zedekiah's Sons"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/61c0623207595272200c7269378c6de6bcfa46d7" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6FiYU4Jf11WIxlO1Mh5mXk">b'Daniel Prays'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bc781ae514d83fbece69c18cba6e3c016512374e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6GV8CT0t7cpAhlIz2x2cIk">b'The Road To Jerusalem'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8ae20d1fa4353cc164623bb37650eb7556c20f0f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0w3G8y3SctnPuT4NIxPew3">b'Pentecost'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6a4df7d8e2c73cde3158f3b3c5fb31d76cbe9864" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6L3EaBXn7LpmJJGGd234ZG">b'King David'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/dc01961fab936a51e6e3c1259889a4085957152a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5CBg1xl6Qajs2O20PC1KeB">b'I Am'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a8860f71ea5745b32194d5107cb17baf1a655b2e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0eVxkFOd26qs2OHWgaqZAq">b'Pray For Us'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/22db78c72128deaa7cc4a698f2c7dac7d1fdb2bd" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5cwYjdFpfYHdDW605V1rvw">b'Free Us, Save Us'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16aa80f232a0b1c0578c1a6e29f7ab78e86ec1e6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/32lev2qA7GoIyOeOgs3bum">b'The Nativity'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/00067102bc8753b93f39620ff9436cd2ad592e19" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0wivFHGP7n18860E8DI8g6">b'Creation Choral'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/847759cd5266711dd4af723247e2b70af56dd336" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1b04oXNSxu4SFDZEWKeyBs">b'Rise Up In Faith'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/81ad040210091e83224029d01531ba5ebf19bb5f" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1Z9A6fD2QdjtPknWz8o2HD">b'A Storm Is Coming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f763ac98c11c6cb8e994f484d760b90f1f910560" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1abHwiAHNNjXxfX4ukbz5E">b'On Thin Ice'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0a9c95da5c766e2e06d5fcbb0c81c213a9f40c05" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5lRuO2VCSiSKnoRt4eAnYi">b"Gotham's Reckoning"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/9db7f72f11adf5442a0740cfe287c36423f982dc" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2xUjzvvooob9ei7nRtwwQo">b'Mind If I Cut In?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/102c90fa4b4a674a63cbdefda7b4108eecf92cf9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2lPCD6c2YWoCSd5Yc7M4Ce">b'Underground Army'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5d33a9bb355ebf4ef661c5f50d9afdde324b0b4a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/547ikxsPVRCEE0s7RaVwIC">b'Born In Darkness'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/16b8c76a61d55a45e367593f65426f77d94f00c1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7588jGUP2AVVU9lICH6TJx">b'The Fire Rises'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/51fcd0d8f2795ef002aa6fc818fd41ab6e529ddf" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0kconObDayGriWNPhRuhjO">b'Nothing Out There'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/90fa19396cbd912d7bb8e75ca742e924d5e1817a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7lP9vhAcG4QYVcv9t8RFPk">b'Despair'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/134447aca4dc4ff2a5a4be21b3f4e3d9c00f751e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6aJ0yquZcfY1EdyI4fiF3s">b'Fear Will Find You'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/bffa6ac8acd1c18e70e7360d7062b93eadf21c77" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7uhkSuVsyScThv2ruUnqDZ">b'Why Do We Fall?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/81df92fc906266f849c8f881c7b22e8905558995" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/2kuWtlahjvanaz3v6zkF5o">b'Death By Exile'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4148d337baa5da3138147a929d32830af86343fa" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5piUrp7AqRBArmjMuDXXLN">b'Imagine The Fire'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/75fe1751cf839c5415e40485dcaebe188fbff6d0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Yd4sQQ9uiPdLC34IDM5y9">b'Necessary Evil'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/a3d9232194e99414433eabf5d3eb62fc720b5c37" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/52eSWdkMDZ8oXgYPsPED8x">b'Rise'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0cb24f5873fbb7f6e939d2a52e931411d6f530ea" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ehPYGeBwkOKc7OAiqwkqU">b'A Storm Is Coming'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/0e9d8bbbe9b5157efd5bc411d5a5205ea43ec4c5" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/61E3Oq86uo6N9yduqPxhnb">b'On Thin Ice'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/7f2219b5356a0655deadc5a25cb47d71646f5a6d" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6wH5EKnvBwwi0TkrdY1qfc">b"Gotham's Reckoning"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/10378bcfdec2358d545bc2647f0c52bcefca5eba" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0JOKp2a9Im9jqRQcq3QNuf">b'Mind If I Cut In?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6216641db4af1f73ce0e6820fda2390c9189eca4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6HWiE3wkdZszIOIaIFOAnW">b'Underground Army'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/c404fff5ede2fe1485c3add87ade8c8812e00db6" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1aroOdEfTE70mXfIjsezos">b'Born In Darkness'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/5856442343942927be403c2378e87b285bce41e3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7y2x1L2Yz97k5AGmCMlxl7">b'The Fire Rises'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b2e4f671ad0aa1d5943edd6b19a336f60f6c52b0" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7sTc7mqmtRCzROOFken1iU">b'Nothing Out There'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/6ea96734791701ff79e4391da5df7d28dd1e9347" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7Gr0cgVjXiMYO2hnH4nOtR">b'Despair'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1258370fac712e6fff94ce8e739cf57aeb14da12" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/22HeVReTjQojguBHTXTnDj">b'Fear Will Find You'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/fd8feb85db05bb65ca1fa7744a28da9c32ed077e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5yuXdw2gb5bV4MXngcfvN6">b'Why Do We Fall?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/aa5f764f6dbab09ec1115656051074976efb7956" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6QTo9Jueo7t2qBod9VZXW0">b'Death By Exile'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/beb2380443e011d5024f369af7116131385cdec9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5JqFv8sDEXFyAHT57X8Dzs">b'Imagine The Fire'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4b7501cf0f19c22438c97fa862c169db47a404d3" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6iYBQWnKkxrtikcws3uFC2">b'Necessary Evil'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f06f11deb857961d8c70dbe4f191ab3e671cebba" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3VdzKymHyCA7OQdUiDREKF">b'Rise'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/d615eac1c99a8a709cc010b57e1fc9ba611efc5e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6FKSvXm6zM76zFfjI8QghL">b'I See Everything'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/72aa1d0f752f718a84293907ee3ea7be7f1bc4e9" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/72rDwzuWKKteajmf98hksg">b'That Is My Curse (Shadows - Part 1)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/b67e15ac080f96df59014c3802e36aa482f8e095" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4ViCTfmjBG1vjLtD266uUt">b'Tick Tock (Shadows - Part 2)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/2d91ffc8282c0314b9c270457dad9844d89792e8" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0x7FfFRxJaS5spxFkKGk3x">b'Chess (Shadows - Part 3)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/520b31e02a08efed421c405bcd9d047251ee5b4e" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/45BiEBkNu5GpHgbQWZ2Y1B">b"It's So Overt It's Covert"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3c847f28a5dbe49ba4a083f5f629015b4fb0c74a" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Abjj6u34I3l5JXngCFXy2">b'Romanian Wind'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e36561447b5660afd7eb0facc62c80d25bca43f1" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0meCWpmI78PYTSrweR3VHf">b'Did You Kill My Wife?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1f7f238409b666f51c83b9e1320d91d21136ce9b" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3Sd9a3BUVuCzhVV043c5HJ">b"He's All Me Me Me"</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/3be73fe3b671f5dc9ea915179eccfaad86a1e006" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/5cFk6zSQI26S1jTs39NYDb">b'The Mycroft Suite'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/eaa0fdbc0fbdf5386553daec4049cd8fd31c5bd4" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0PZsh21FgAdEKXgM8vDPk6">b'To The Opera!'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0Z6erEgwiyakbWpFMS9uXl">b'Two Mules for Sister Sara'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4qyLJxst8oulTdAE7sVOOF">b'Die Forelle'</a></h4>
+    <audio controls name="media">
+        <source src="None" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/6zgHsJDTaYrJvCEoe8PoHi">b'Zu Viele F\xc3\xbcchse F\xc3\xbcr Euch H\xc3\xa4nsel'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/4b783bb28ed0a782be3b6020598464b144688723" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/3euepg9hdCJWX6mPIYndkq">b'The Red Book'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/1945de2ad27e7a9ad789167aa68e3de765b49bed" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/1VLgcXaLRRNQaPzQZF7BLO">b'Moral Insanity'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/e4bd166fd7d10cb24372edabf59de623909fcc76" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/4XtSFmYImePldNHIEzDeF6">b'Memories of Sherlock'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/75546a7f36cfd0b3b42fa70c84275c9cd45b27e2" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/0mbhMnWXKabJNG91e1qPOw">b'The End?'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/f6936b6b5322a47b830bc0ddf8d82b82e708b603" type="audio/mpeg">
+    </audio>
+</div>
+
+<div>
+    <h4><a href="https://open.spotify.com/track/7zlYxm1E1H5S9ZSXXpYLws">b'Romani Holiday (Antonius Remix)'</a></h4>
+    <audio controls name="media">
+        <source src="https://p.scdn.co/mp3-preview/8affb545eae31e5d585f5b79d275ca42bf63826e" type="audio/mpeg">
+    </audio>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>

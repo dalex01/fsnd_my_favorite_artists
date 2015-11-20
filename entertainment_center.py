@@ -3,7 +3,7 @@ import index_template
 import spotipy
 
 artists_list = {
-	'Rammstein': 'band',
+#	'Rammstein': 'band',
 #	'Infected Mashroom': 'band',
 #	'Scorpions': 'band',
 	'Hans Zimmer': 'singer',
@@ -37,20 +37,23 @@ def fillArtists(artists_list):
 			uri = art['uri']
 			alb = spotify.artist_albums(uri, album_type='album')
 			albums = []
+			albums_names = []
 			for album in alb['items']:
-				alb_uri = album['uri']
-				sng = spotify.album_tracks(alb_uri)
-				songs = []
-				for song in sng['items']:
-					songs.append(media.Song(song['uri'], song['name'], song['duration_ms'], song['preview_url'], song['external_urls']['spotify']))
-				albums.append(media.Album(alb_uri, album['name'], songs, album['images'][0]['url'], album['external_urls']['spotify']))
+				if album['name'] not in albums_names:
+					albums_names.append(album['name'])
+					alb_uri = album['uri']
+					sng = spotify.album_tracks(alb_uri)
+					songs = []
+					for song in sng['items']:
+						songs.append(media.Song(song['uri'], song['name'].encode('utf-8'), song['duration_ms'], song['preview_url'], song['external_urls']['spotify']))
+					albums.append(media.Album(alb_uri, album['name'], songs, album['images'][0]['url'], album['external_urls']['spotify']))
 			if(tp == "band"):
 				artist = media.Band(uri, art['name'], albums, art['external_urls']['spotify'])
 			elif(tp == "singer"):
 				artist = media.Singer(uri, art['name'], albums, art['external_urls']['spotify'])
-		print(artist)
+		#print(artist)
 		artists.append(artist)
 	return artists
 
-print(fillArtists(artists_list))
-#index_template.open_artists_page(fillArtists(artists_list))
+#print(fillArtists(artists_list)[0].name)
+index_template.open_artists_page(fillArtists(artists_list))

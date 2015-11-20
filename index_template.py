@@ -12,7 +12,7 @@ main_page_head = '''
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Fresh Tomatoes!</title>
+    <title>My Favorite Artists</title>
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
@@ -22,41 +22,30 @@ main_page_head = '''
         body {
             padding-top: 80px;
         }
-        #trailer .modal-dialog {
-            margin-top: 200px;
-            width: 640px;
-            height: 480px;
+        h1 {
+            font-size: 30px!important;
+            margin-top: 0!important;
         }
-        .hanging-close {
-            position: absolute;
-            top: -12px;
-            right: -12px;
-            z-index: 9001;
+        h2 {
+            font-size: 24px!important;
         }
-        #trailer-video {
-            width: 100%;
-            height: 100%;
+        h3 {
+            font-size: 20px!important;
         }
-        .movie-tile {
-            margin-bottom: 20px;
-            padding-top: 20px;
+        img {
+            width: 90%;
         }
-        .movie-tile:hover {
+        .artist:hover {
             background-color: #EEE;
             cursor: pointer;
         }
-        .scale-media {
-            padding-bottom: 56.25%;
-            position: relative;
+        .album-tile {
+            margin-bottom: 20px;
+            padding-top: 20px;
         }
-        .scale-media iframe {
-            border: none;
-            height: 100%;
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 0;
-            background-color: white;
+        .album-tile:hover {
+            background-color: #EEE;
+            cursor: pointer;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -87,34 +76,33 @@ main_page_head = '''
 </head>
 '''
 
+#main_page_style = '''
+#    <style>
+#'''
 
 # The main page layout and title bar
 main_page_content = '''
   <body>
-    <!-- Trailer Video Modal -->
-    <div class="modal" id="trailer">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <a href="#" class="hanging-close" data-dismiss="modal" aria-hidden="true">
-            <img src="https://lh5.ggpht.com/v4-628SilF0HtHuHdu5EzxD7WRqOrrTIDi_MhEG6_qkNtUK5Wg7KPkofp_VJoF7RS2LhxwEFCO1ICHZlc-o_=s0#w=24&h=24"/>
-          </a>
-          <div class="scale-media" id="trailer-video-container">
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Main Page Content -->
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#"><h1>My Favorite Artists</h1></a>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      {movie_tiles}
+      <div class="col-md-2">
+        {artists_list}
+      </div>
+      <div class="col-md-6 container">
+        {albums_list}
+      </div>
+      <div class="col-md-4">
+        {songs_list}
+      </div>
     </div>
   </body>
 </html>
@@ -122,42 +110,85 @@ main_page_content = '''
 
 
 # A single movie entry html template
-movie_tile_content = '''
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+artist_tile_content = '''
+<div class="{artist_style}">
+    <h2 class="artist">{artist_title}</h2>
 </div>
 '''
 
-
-def create_movie_tiles_content(movies):
+def create_artists_tiles_content(artists):
     # The HTML content for this section of the page
     content = ''
-    for movie in movies:
-        # Extract the youtube ID from the url
-        youtube_id_match = re.search(
-            r'(?<=v=)[^&#]+', movie.trailer_youtube_url)
-        youtube_id_match = youtube_id_match or re.search(
-            r'(?<=be/)[^&#]+', movie.trailer_youtube_url)
-        trailer_youtube_id = (youtube_id_match.group(0) if youtube_id_match
-                              else None)
+    for artist in artists:
 
         # Append the tile for the movie with its content filled in
-        content += movie_tile_content.format(
-            movie_title=movie.title,
-            poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
+        content += artist_tile_content.format(
+            artist_title = artist.name,
+            artist_style = artist.name
         )
     return content
 
+# A single movie entry html template
+album_tile_content = '''
+<div class="col-md-6 text-center album-tile {album_class}">
+    <img src="{poster_image_url}">
+    <h3>{album_title}</h3>
+</div>
+'''
 
-def open_movies_page(movies):
+def create_albums_tiles_content(artists):
+    #global main_page_style
+    # The HTML content for this section of the page
+    content = ''
+    for artist in artists:
+        for album in artist.albums:
+            # Append the tile for the movie with its content filled in
+            content += album_tile_content.format(
+                album_title = album.name,
+                poster_image_url = album.cover,
+                album_class = artist.name.replace(" ", "")
+            )
+            #main_page_style += '.' + artist.name.replace(" ", "") + '{ display: hide;}'
+    #main_page_style += '</style>'
+    return content
+
+# A single movie entry html template
+song_tile_content = '''
+<div>
+    <h4><a href="{song_url}">{song_title}</a></h4>
+    <audio controls name="media">
+        <source src="{song_preview}" type="audio/mpeg">
+    </audio>
+</div>
+'''
+
+def create_songs_tiles_content(artists):
+    # The HTML content for this section of the page
+    content = ''
+    for artist in artists:
+        for album in artist.albums:
+            for song in album.songs:
+                # Append the tile for the movie with its content filled in
+                content += song_tile_content.format(
+                    song_title = song.name,
+                    song_preview = song.preview,
+                    song_url = song.url
+                )
+    return content
+
+def open_artists_page(artists):
+    #global main_page_style
     # Create or overwrite the output file
     output_file = open('index.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
-        movie_tiles=create_movie_tiles_content(movies))
+        artists_list = create_artists_tiles_content(artists),
+        albums_list = create_albums_tiles_content(artists),
+        songs_list = create_songs_tiles_content(artists))
+
+    #rendered_head = main_page_head.format(
+    #    my_styles = main_page_style)
 
     # Output the file
     output_file.write(main_page_head + rendered_content)
