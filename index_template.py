@@ -58,9 +58,9 @@ main_page_head = '''
         });
         $(document).on('click', '.album-tile', function (event) {
             $(".album-tile").each(function(){
-                $('.' + $(this).text().replace(/\s+/g, '')).hide();
+                $('.' + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).hide();
             });
-            $('.' + $(this).text().replace(/\s+/g, '')).show();
+            $('.' + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).show();
         });
     </script>
 </head>
@@ -159,7 +159,7 @@ def create_songs_tiles_content(artists):
                     song_title = song.name,
                     song_preview = song.preview,
                     song_url = song.url,
-                    song_class = album.name.replace(" ", "")
+                    song_class = re.sub('[^a-zA-Z0-9]', "", album.name)
                 )
     return content
 

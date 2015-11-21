@@ -3,26 +3,27 @@ import index_template
 import spotipy
 
 artists_list = {
-#	'Rammstein': 'band',
-#	'Infected Mashroom': 'band',
-#	'Scorpions': 'band',
-	'Hans Zimmer': 'singer',
-#	'Pink Floyd': 'band',
-#	'Red Hot Chili Peppers': 'band',
-#	'Therion': 'band',
-#	'Apocalyptica': 'band',
-#	'Anathema': 'band',
-#	'Tiamat': 'band',
-#	'Moonspell': 'band',
-#	'Funker Vogt': 'band',
-#	'Fort Minor': 'band',
-#	'Amorphis': 'band',
-#	'Blind Guardian': 'band',
-#	'Disturbed': 'band',
-#	'Metallica': 'band',
-#	'Helloween': 'band',
-#	'Iron Maiden': 'band',
-	'Sabaton': 'band'}
+#	'Rammstein': 'band',			# problem with encoding
+	'Infected Mushroom': 'band',
+	'Scorpions': 'band',
+#	'Hans Zimmer': 'singer',		# problem with encoding
+#	'Pink Floyd': 'band',			# problem with encoding
+#	'Red Hot Chili Peppers': 'band',# problem with classes (hide/show logic)
+#	'Therion': 'band',				# problem with encoding
+	'Apocalyptica': 'band',
+	'Anathema': 'band',
+	'Tiamat': 'band',
+	'Moonspell': 'band',
+#	'Funker Vogt': 'band',			# problem with encoding
+	'Fort Minor': 'band',
+	'Amorphis': 'band',
+	'Blind Guardian': 'band',
+#	'Disturbed': 'band',			# problem with encoding
+#	'Metallica': 'band',			# problem with classes (hide/show logic)
+#	'Helloween': 'band',			# problem with encoding
+#	'Sabaton': 'band',				# problem with encoding
+	'Iron Maiden': 'band'}
+
 
 def fillArtists(artists_list):
 	artists = []
@@ -45,7 +46,7 @@ def fillArtists(artists_list):
 					sng = spotify.album_tracks(alb_uri)
 					songs = []
 					for song in sng['items']:
-						songs.append(media.Song(song['uri'], song['name'].encode('utf-8'), song['duration_ms'], song['preview_url'], song['external_urls']['spotify']))
+						songs.append(media.Song(song['uri'], song['name'], song['duration_ms'], song['preview_url'], song['external_urls']['spotify']))
 					albums.append(media.Album(alb_uri, album['name'], songs, album['images'][0]['url'], album['external_urls']['spotify']))
 			if(tp == "band"):
 				artist = media.Band(uri, art['name'], albums, art['external_urls']['spotify'])
