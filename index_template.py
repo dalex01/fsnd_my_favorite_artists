@@ -1,6 +1,3 @@
-### !!! Current content is just template taken from course movie project.
-### !!! Should be refactored
-
 import webbrowser
 import os
 import re
@@ -49,26 +46,28 @@ main_page_head = '''
         }
     </style>
     <script type="text/javascript" charset="utf-8">
-        // Start playing the video whenever the trailer modal is opened
+        //var chosen_artist = '';
+        // Display albums when particular artist is clicked
         $(document).on('click', '.artist', function (event) {
             $(".artist").each(function(){
                 $('.' + $(this).text().replace(/\s+/g, '')).hide();
             });
             $('.' + $(this).text().replace(/\s+/g, '')).show();
+            //chosen_artist = $(this).text().replace(/\s+/g, '');
         });
+        // Display songs when particular album is clicked
         $(document).on('click', '.album-tile', function (event) {
             $(".album-tile").each(function(){
+                //$('.' + chosen_artist + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).hide();
                 $('.' + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).hide();
             });
+            //$('.' + chosen_artist + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).show();
             $('.' + $(this).text().replace(/[^a-zA-Z0-9]/g, '')).show();
         });
     </script>
 </head>
 '''
 
-#main_page_style = '''
-#    <style>
-#'''
 
 # The main page layout and title bar
 main_page_content = '''
@@ -99,7 +98,7 @@ main_page_content = '''
 '''
 
 
-# A single movie entry html template
+# A single artist entry html template
 artist_tile_content = '''
 <div>
     <h2 class="artist">{artist_title}</h2>
@@ -111,13 +110,13 @@ def create_artists_tiles_content(artists):
     content = ''
     for artist in artists:
 
-        # Append the tile for the movie with its content filled in
+        # Append the artist with its content filled in
         content += artist_tile_content.format(
             artist_title = artist.name
         )
     return content
 
-# A single movie entry html template
+# A single album entry html template
 album_tile_content = '''
 <div class="col-md-6 text-center album-tile {album_class}" style="display:none">
     <img src="{poster_image_url}">
@@ -130,7 +129,7 @@ def create_albums_tiles_content(artists):
     content = ''
     for artist in artists:
         for album in artist.albums:
-            # Append the tile for the movie with its content filled in
+            # Append the tile for the album with its content filled in
             content += album_tile_content.format(
                 album_title = album.name,
                 poster_image_url = album.cover,
@@ -138,7 +137,7 @@ def create_albums_tiles_content(artists):
             )
     return content
 
-# A single movie entry html template
+# A single song entry html template
 song_tile_content = '''
 <div class="{song_class}" style="display:none">
     <h4><a href="{song_url}">{song_title}</a></h4>
@@ -154,7 +153,7 @@ def create_songs_tiles_content(artists):
     for artist in artists:
         for album in artist.albums:
             for song in album.songs:
-                # Append the tile for the movie with its content filled in
+                # Append the tile for the song with its content filled in
                 content += song_tile_content.format(
                     song_title = song.name,
                     song_preview = song.preview,
@@ -167,7 +166,7 @@ def open_artists_page(artists):
     # Create or overwrite the output file
     output_file = open('index.html', 'w')
 
-    # Replace the movie tiles placeholder generated content
+    # Replace the artist, albu and song tiles placeholder generated content
     rendered_content = main_page_content.format(
         artists_list = create_artists_tiles_content(artists),
         albums_list = create_albums_tiles_content(artists),

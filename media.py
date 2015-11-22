@@ -1,10 +1,10 @@
 class Artist():
-    """TBD"""
+    """This class provides a way to store artists related information"""
     def __init__(self, id, name, albums = None, url = None):
         self.id = id
         self.name = name
         self.albums = albums
-        self.url = url
+        self.url = url                      # variable is not used currently
 
     def __str__(self):
         return "ID: " + str(self.id) + "\n" + \
@@ -12,11 +12,11 @@ class Artist():
                "Url: " + str(self.url) + "\n"
 
 class Singer(Artist):
-    """TBD"""
+    """This class provides a way to store singer related information"""
     def __init__(self, id, name, albums = None, url = None, borth_date = None, death_date = None):
         Artist.__init__(self, id, name, albums, url)
-        self.borth_date = borth_date
-        self.death_date = death_date
+        self.borth_date = borth_date        # variable is not used currently
+        self.death_date = death_date        # variable is not used currently
 
     def __str__(self):
         return "ID: " + str(self.id) + "\n" + \
@@ -27,11 +27,11 @@ class Singer(Artist):
                "Url: " + str(self.url) + "\n"
 
 class Band(Artist):
-    """TBD"""
+    """This class provides a way to store band related information"""
     def __init__(self, id, name, albums = None, url = None, participants = None):
         Artist.__init__(self, id, name, albums, url)
-        self.num_of_participants = len(participants) if participants else None
-        self.participants = participants
+        self.num_of_participants = len(participants) if participants else None  # variable is not used currently
+        self.participants = participants                                        # variable is not used currently
 
     def __str__(self):
         return "ID: " + str(self.id) + "\n" + \
@@ -42,13 +42,13 @@ class Band(Artist):
                "Url: " + str(self.url) + "\n"
 
 class Album():
-    """TBD"""
+    """This class provides a way to store album related information"""
     def __init__(self, id, name, songs = None, cover = None, url = None):
         self.id = id
         self.name = name
         self.songs = songs
         self.cover = cover
-        self.url = url
+        self.url = url      # variable is not used currently
 
     def __str__(self):
         return "ID: " + str(self.id) + "\n" + \
@@ -58,13 +58,13 @@ class Album():
                "Url: " + str(self.url) + "\n"
 
 class Song():
-    """TBD"""
+    """This class provides a way to store song related information"""
     def __init__(self, id, name, duration = None, preview = None, url = None):
         self.id = id
         self.name = name
-        self.duration = duration
+        self.duration = duration    # variable is not used currently
         self.preview = preview
-        self.url = url
+        self.url = url              # variable is not used currently
 
     def __str__(self):
         return "ID: " + str(self.id) + "\n" + \

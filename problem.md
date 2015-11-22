@@ -3,7 +3,6 @@
 I have a list of favourite artists and songs. I want to be able to:
 * store playlist of these songs in the app
 * see artists albums and information about it
-* TBD
 
 # Suggested solution
 
@@ -44,8 +43,11 @@ Classes diagram you can find [here](https://docs.google.com/presentation/d/1lCeJ
 * Create Song class that should store
   * name
   * duration
-* Create list of artists - singers or bands (will be hardcoded)
-* Iterate through all artists and download artist's albums via API
+* Create dictionary of artists with its types - singers or bands (will be hardcoded)
+* Iterate through all artists from the list and download artist's albums via API
 * Iterate through all albums and download album's songs via API
+* Create element of Song class and add it to list of all songs for particular album
+* Create element of Album class (using list of songs from previous step) and add it to list of all albums for particular artist
+* Create element of Band or Singer class (using list of albums from previous step) and add it to list of all artists that will be later parsed to display in template
 * Create html template
-* Display all into template and generate index.html page
+* Display all artist using list of artists created on previous steps into template and generate index.html page
