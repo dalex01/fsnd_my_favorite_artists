@@ -12,7 +12,7 @@ Project was reviewed according to this [rubric](https://docs.google.com/document
 * To see this project on your PC you should just clone repository with command `git clone https://github.com/dalex01/fsnd_my_favorite_artists.git` and start index.html file.
 * Or [click](dalex01.github.io/fsnd_my_favorite_artists)
 
-Python 3 should be used to run this project
+Python 3 should be used to run this project. App is web-based and platform-agnostic but it was developed on machine with Windows 8 installed.
 
 ## Features
 
@@ -20,7 +20,12 @@ App shows my favorite artists, their albums and songs in albums. For each song y
 
 ## APIs used
 
-1. Spotify API (via spotipy python library)
+1. Spotify API (via [spotipy python library](https://github.com/plamere/spotipy))
+
+Here is [documentation](http://spotipy.readthedocs.org/en/latest/) for this library. To install spotipy via pip you should use the following command:
+```
+pip install spotipy
+```
 
 ## Known Problems (to be corrected)
 
