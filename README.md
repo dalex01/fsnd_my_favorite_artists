@@ -12,6 +12,8 @@ Project was reviewed according to this [rubric](https://docs.google.com/document
 * To see this project on your PC you should just clone repository with command `git clone https://github.com/dalex01/fsnd_my_favorite_artists.git` and start index.html file.
 * Or [click](dalex01.github.io/fsnd_my_favorite_artists)
 
+Python 3 should be used to run this project
+
 ## Features
 
 App shows my favorite artists, their albums and songs in albums. For each song you can listen some preview fragment or go to Spotify site to listen full song.
