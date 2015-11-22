@@ -10,7 +10,7 @@ Project was reviewed according to this [rubric](https://docs.google.com/document
 ## How to use
 
 * To see this project on your PC you should just clone repository with command `git clone https://github.com/dalex01/fsnd_my_favorite_artists.git` and start index.html file.
-* Or [click](dalex01.github.io/fsnd_my_favorite_artists)
+* Or [click](https://dalex01.github.io/fsnd_my_favorite_artists)
 
 App is web-based and platform-agnostic but it was developed on machine with Windows 8 installed.
 
