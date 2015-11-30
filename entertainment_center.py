@@ -3,25 +3,15 @@ import index_template
 import spotipy
 
 artists_list = {
-#	'Rammstein': 'band',			# problem with encoding
 	'Infected Mushroom': 'band',
 	'Scorpions': 'band',
-#	'Hans Zimmer': 'singer',		# problem with encoding
-#	'Pink Floyd': 'band',			# problem with encoding
-#	'Red Hot Chili Peppers': 'band',# problem with classes (hide/show logic)
-#	'Therion': 'band',				# problem with encoding
 	'Apocalyptica': 'band',
 	'Anathema': 'band',
 	'Tiamat': 'band',
 	'Moonspell': 'band',
-#	'Funker Vogt': 'band',			# problem with encoding
 	'Fort Minor': 'band',
 	'Amorphis': 'band',
 	'Blind Guardian': 'band',
-#	'Disturbed': 'band',			# problem with encoding
-#	'Metallica': 'band',			# problem with classes (hide/show logic)
-#	'Helloween': 'band',			# problem with encoding
-#	'Sabaton': 'band',				# problem with encoding
 	'Iron Maiden': 'band'}
 
 
